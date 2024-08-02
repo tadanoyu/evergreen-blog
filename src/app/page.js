@@ -1,5 +1,13 @@
+import NotesList from "./components/NotesList";
+import styles from "./page.module.scss";
+
 export default function Home() {
   return (
-    <h1>Hello, World!</h1>
-  );
+    <div className={styles.main}>
+      <NotesList />
+      {/* <div className={styles.content}>
+        <h1>Content</h1>
+      </div> */}
+    </div>
+  )
 }
