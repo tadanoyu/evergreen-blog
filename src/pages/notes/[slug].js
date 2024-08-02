@@ -7,7 +7,6 @@ import html from 'remark-html'
 export default function Note({ frontMatter, content }) {
   return (
     <div>
-      {/* <h1>{frontMatter.title}</h1> */}
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   )
