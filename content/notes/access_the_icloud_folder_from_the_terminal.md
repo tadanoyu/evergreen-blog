@@ -1,9 +1,7 @@
 ---
 title: "Access the iCloud folder from the terminal"
+date: "April 29th, 2024"
 ---
-
-# Access the iCloud folder from the terminal
-#evergreen
 
 ```sh
 cd ~/Library/Mobile\ Documentsn/com~apple~CloudDocs

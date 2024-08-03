@@ -1,9 +1,7 @@
 ---
 title: "Implementing a Vector using C++"
+date: "June 10th, 2024"
 ---
-
-# Implementing a Vector using C++
-#evergreen
 
 ```cpp
 #include <iostream>

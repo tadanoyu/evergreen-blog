@@ -3,11 +3,20 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import styles from "./notes.module.scss"
 
 export default function Note({ frontMatter, content }) {
   return (
-    <div>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+    <div className={`${styles.post}`}>
+      <div className={styles.post__header}>
+        <h1>
+          {frontMatter.title}
+        </h1>
+        <div className={styles.date}>
+          {frontMatter.date}
+        </div>
+      </div>
+      <div dangerouslySetInnerHTML={{ __html: content }}/>
     </div>
   )
 }

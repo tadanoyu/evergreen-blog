@@ -1,15 +1,7 @@
 ---
 title: "don't use Fileopen when distributing your app"
+date: "April 6th, 2024"
 ---
-
----
-created: "2024-04-06 06:16:05"
-from: "LEX"
-updatedFrom: "corbin, living room sofa"
----
-
-# don't use File::open when distributing your app
-#evergreen
 
 Depends on the system, `File::open` may cause an issue when you distribute your application due to a failure in locating the file. Use `include_bytes` instead to directly embed the audio binary data into the compiled executables.
 

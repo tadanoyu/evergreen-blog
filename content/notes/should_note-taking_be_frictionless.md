@@ -1,14 +1,7 @@
 ---
 title: "should note-taking be frictionless"
+date: "April 2nd, 2024"
 ---
-
----
-created: "2024-04-02 11:38am"
-from: "corbin / my room"
----
-
-# should note-taking be frictionless?
-#evergreen
 
 Frictionless sounds like there was no thinking. In that sense, the question changes to _"should you not think when writing notes?"_
 

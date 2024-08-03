@@ -1,9 +1,7 @@
 ---
 title: "html2canvas fails to render images"
+date: "May 18th, 2024"
 ---
-
-# html2canvas fails to render images
-#evergreen
 
 ![](html2canvas%20fails%20to%20render%20images/yourtrack-error1.webp)
 If your images are saved in other server and you fetched it to display the images, `html2canvas` may fail to render those images on download. This is likely due to CORS issue.

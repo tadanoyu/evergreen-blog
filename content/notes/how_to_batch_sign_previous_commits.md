@@ -1,9 +1,7 @@
 ---
 title: "How to batch sign previous commits"
+date: "May 18th, 2024"
 ---
-
-# How to batch sign previous commits
-#evergreen
 
 Find the earliest commit that has not been signed yet using `git log --show-signatures` (you may want to use `--reverse` flag to start from the initial commit).
 

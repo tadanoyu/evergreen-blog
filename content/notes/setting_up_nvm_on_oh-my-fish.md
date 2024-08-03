@@ -1,9 +1,7 @@
 ---
 title: "Setting up NVM on oh-my-fish"
+date: "May 2nd, 2024"
 ---
-
-# Setting up NVM on oh-my-fish
-#evergreen
 
 setting up node in [[oh-my-fish]] requires a bit of configuration than simply installing it.
 

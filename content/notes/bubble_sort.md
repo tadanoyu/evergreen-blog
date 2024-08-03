@@ -1,9 +1,7 @@
 ---
 title: "Bubble sort"
+date: "May 15th, 2024"
 ---
-
-# Bubble sort
-#evergreen
 
 ```rust
 fn bubble_sort(nums: &mut Vec<i32>) {

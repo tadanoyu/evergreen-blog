@@ -1,9 +1,7 @@
 ---
 title: "Generate a new SSH key"
+date: "May 15th, 2024"
 ---
-
-# Generate a new SSH key
-#evergreen
 
 Create a new SSH key in the `~/.ssh` directory.
 

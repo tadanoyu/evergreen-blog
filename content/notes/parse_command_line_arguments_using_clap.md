@@ -1,13 +1,7 @@
 ---
 title: "Parse command line arguments using clap"
+date: "March 30th, 2024"
 ---
-
----
-created: '2024-03-30 06:30:00'
-from: 'corbin / my room'
----
-# Parse command line arguments using clap
-#evergreen
 
 For _pomosh_, I wanted to add a command line functionality to be able to do something like the following:
 

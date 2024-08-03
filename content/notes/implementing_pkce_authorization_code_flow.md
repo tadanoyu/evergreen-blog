@@ -1,14 +1,7 @@
 ---
 title: "Implementing PKCE Authorization Code Flow"
+date: "February 17th, 2024"
 ---
-
----
-created: "2024-02-17 21:23:00"
-from: "corbin, living room sofa"
----
-
-# Implementing PKCE Authorization Code Flow
-#evergreen
 
 Authorization is a process of granting a user or an app access permissions to certain data and/or features.
 

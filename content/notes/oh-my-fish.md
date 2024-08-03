@@ -1,9 +1,8 @@
 ---
 title: "oh-my-fish"
+date: "May 2nd, 2024"
 ---
 
-# oh-my-fish
-#evergreen #pnoun/tools
 
 [Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish) or `omf` is a fish shell framework. It requires a [[fish shell]] to be installed first.
 

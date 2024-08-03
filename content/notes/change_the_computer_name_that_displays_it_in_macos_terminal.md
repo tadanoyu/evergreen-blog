@@ -1,9 +1,7 @@
 ---
 title: "Change the computer name that displays it in macOS terminal"
+date: "May 18th, 2024"
 ---
-
-# Change the computer name that displays it in macOS terminal
-#evergreen
 
 ```sh
 sudo scutil --set HostName <name-you-want>

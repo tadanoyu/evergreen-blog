@@ -1,9 +1,7 @@
 ---
 title: "Linked List is better if lots of insertions and deletions are required"
+date: "June 2nd, 2024"
 ---
-
-# Linked List is better if lots of insertions and deletions are required
-#evergreen
 
 [[Linked lists|Linked List]] is a linear data structure where nodes are connected via pointers. A node is an element used in a linked list ([[Different linked lists have different node structures]]).
 

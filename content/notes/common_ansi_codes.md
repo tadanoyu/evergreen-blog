@@ -1,9 +1,7 @@
 ---
 title: "Common ANSI codes"
+date: "May 15th, 2024"
 ---
-
-# Common ANSI codes
-#evergreen
 
 Here are some common ANSI codes and their functions:
 

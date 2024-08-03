@@ -1,14 +1,7 @@
 ---
 title: "a way to find the data type of a variable in rust"
+date: "April 2nd, 2024"
 ---
-
----
-created: "2024 April 02 (Tuesday) 10:34pm"
-from: "corbin / my room"
----
-
-# a way to find the data type of a variable in rust
-#evergreen
 
 Rust doesn't have any existing method that lets you get the data type of a variable. So you have to make one for yourself.
 ```rust

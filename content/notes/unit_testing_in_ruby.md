@@ -1,9 +1,7 @@
 ---
 title: "Unit Testing in Ruby"
+date: "June 7th, 2024"
 ---
-
-# Unit Testing in Ruby
-#evergreen
 
 ```ruby
 require 'test/unit'

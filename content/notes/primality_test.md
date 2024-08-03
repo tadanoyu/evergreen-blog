@@ -1,9 +1,7 @@
 ---
 title: "Primality Test"
+date: "May 18th, 2024"
 ---
-
-# Primality Test
-#evergreen
 
 Primality test is an algorithm to determine whether an input number is a [[Prime numbers|prime]].
 

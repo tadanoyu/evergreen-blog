@@ -1,9 +1,7 @@
 ---
 title: "How to update the email associated with existing GPG key"
+date: "May 18th, 2024"
 ---
-
-# How to update the email associated with existing GPG key
-#evergreen
 
 [[Check for existing GPG keys]] and get the key which you want to update the email.
 

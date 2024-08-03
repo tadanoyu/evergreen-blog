@@ -1,9 +1,7 @@
 ---
 title: "Class in Ruby"
+date: "June 6th, 2024"
 ---
-
-# Class in Ruby
-#evergreen
 
 ```rb
 class Vector

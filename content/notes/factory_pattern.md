@@ -1,14 +1,7 @@
 ---
 title: "Factory Pattern"
+date: 'February 13th, 2024'
 ---
-
----
-created: '2024-02-13 16:23:00'
-from: "corbin, living room sofa"
----
-
-# Factory Pattern
-#evergreen
 
 - Factory Pattern provides an interface to create an object and delegates object construction from a super class to a special class known as a _factory class_.
 - Factory Pattern provides encapsulation through composition.

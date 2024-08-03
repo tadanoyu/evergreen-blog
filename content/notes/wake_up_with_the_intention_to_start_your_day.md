@@ -1,14 +1,7 @@
 ---
 title: "Wake up with the intention to start your day"
+date: "March 2nd, 2024"
 ---
-
----
-created: '2024-03-02 16:54:00'
-from: "corbin / my room"
----
-
-# Wake up with the intention to start your day
-#evergreen
 
 Do you wake up in the morning with the intention to start your day? For most people, the answer is no.
 

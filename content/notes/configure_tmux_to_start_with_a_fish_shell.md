@@ -1,9 +1,7 @@
 ---
 title: "Configure tmux to start with a fish shell"
+date: "May 1st, 2024"
 ---
-
-# Configure tmux to start with a fish shell
-#evergreen
 
 Set the option in tmux configuration file located at root (`~/.tmux.conf`) to start tmux with a [[fish shell]].
 

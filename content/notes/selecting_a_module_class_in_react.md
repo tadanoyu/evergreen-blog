@@ -1,15 +1,7 @@
 ---
 title: "Selecting a module class in React"
+date: "March 2nd, 2024"
 ---
-
----
-created: "2024-03-02 16:39:00"
-from: "corbin / my room"
-updatedFrom: "LEX B6", "corbin, living room sofa"
----
-
-# Selecting a module class in React
-#evergreen
 
 When you create a module class in React, the rendered class name contains a random suffix string.
 

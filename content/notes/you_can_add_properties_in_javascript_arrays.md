@@ -1,9 +1,7 @@
 ---
 title: "You can add properties in JavaScript arrays"
+date: "June 10th, 2024"
 ---
-
-# You can add properties in JavaScript arrays
-#evergreen
 
 [[Arrays]] in JavaScript are quite far from the traditional array. In JavaScript, arrays are more like objects. Integer indexes become keys and you can even add properties to it.
 

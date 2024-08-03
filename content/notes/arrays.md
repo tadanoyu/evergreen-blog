@@ -1,9 +1,7 @@
 ---
 title: "Arrays"
+date: "June 10th, 2024"
 ---
-
-# Arrays
-#evergreen
 
 An array is a type of linear [[Data Structure]] where elements are stored contiguously in the memory. This means a chunk or a block of memory is allocated when the array is first initialized ー there are [[Different types of an array]].
 

@@ -1,9 +1,7 @@
 ---
 title: "Reverse a linked list"
+date: "June 13th, 2024"
 ---
-
-# Reverse a linked list
-#evergreen
 
 * Initialize three pointers `prev = nil`, `curr = head`, and `next = nil`.
 * Iterate through the linked list. In a loop, do the following:

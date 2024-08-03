@@ -1,9 +1,7 @@
 ---
 title: "fish shell"
+date: "May 2nd, 2024"
 ---
-
-# fish shell
-#evergreen #pnoun/tools
 
 [Fish](https://fishshell.com/) is a smart and user-friendly command line shell for Linux, macOS, and the rest of the family.
 

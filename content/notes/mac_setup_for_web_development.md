@@ -1,9 +1,7 @@
 ---
 title: "Mac Setup for Web Development"
+date: "April 29th, 2024"
 ---
-
-# Mac Setup for Web Development
-#evergreen
 
 ## MacBook Pro Specification
 - 13-inch, 2020

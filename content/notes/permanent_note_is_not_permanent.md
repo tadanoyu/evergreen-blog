@@ -1,14 +1,7 @@
 ---
 title: "Permanent note is not permanent"
+date: "April 2nd, 2024"
 ---
-
----
-created: "2024-04-02 01:06pm"
-from: "corbin / my room"
----
-
-# Permanent note is not permanent
-#evergreen
 
 Permanent note is permanent in a sense that it _permanently resides in your system_ rather than the content being immutable.
 

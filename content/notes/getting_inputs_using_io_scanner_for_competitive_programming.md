@@ -1,14 +1,7 @@
 ---
 title: "Getting inputs using IO Scanner for competitive programming"
+date: "April 3rd, 2024"
 ---
-
----
-created: "2024 April 03 (Wednesday) 02:20am"
-from: "corbin / my room"
----
-
-# Getting inputs using IO Scanner for competitive programming
-#evergreen
 
 You can't install additional crates in competitive programming, so you will need to include part of the crate's code directly to your code to use it. IO Scanner is convenient for reading various inputs in Rust.
 

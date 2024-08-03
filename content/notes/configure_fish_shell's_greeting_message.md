@@ -1,9 +1,7 @@
 ---
 title: "Configure fish shell's greeting message"
+date: "May 1st, 2024"
 ---
-
-# Configure fish shell's greeting message
-#evergreen
 
 If you want to change [[fish shell]]'s initial greeting message, you can set `fish_greeting` in the fish configuration file: `~/.config/fish/config.fish` .
 

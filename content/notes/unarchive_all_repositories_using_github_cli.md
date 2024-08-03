@@ -1,9 +1,7 @@
 ---
 title: "Unarchive all repositories using GitHub CLI"
+date: "May 2nd, 2024"
 ---
-
-# Unarchive all repositories using GitHub CLI
-#evergreen
 
 ## tl;dr
 ```sh

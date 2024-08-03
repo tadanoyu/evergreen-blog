@@ -1,9 +1,7 @@
 ---
 title: "Different types of an array"
+date: "June 11th, 2024"
 ---
-
-# Different types of an array
-#evergreen
 
 There are three (==maybe more?==) different types of an array: [[Static Array]], [[Dynamic Array]], and [[Jagged Array]].
 

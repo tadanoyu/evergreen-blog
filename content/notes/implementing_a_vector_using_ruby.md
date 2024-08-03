@@ -1,9 +1,7 @@
 ---
 title: "Implementing a Vector using Ruby"
+date: "Jun 10th, 2024"
 ---
-
-# Implementing a Vector using Ruby
-#evergreen
 
 ```ruby
 class Vector

@@ -1,9 +1,7 @@
 ---
 title: "Including Other Files in Ruby"
+date: "June 7th, 2024"
 ---
-
-# Including Other Files in Ruby
-#evergreen
 
 - to load every time the method is executed: `load`
 - to load only once: we can use `require`

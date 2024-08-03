@@ -1,15 +1,7 @@
 ---
 title: "styling webkit-scroll-value in safari"
+date: "March 2nd, 2024"
 ---
-
----
-created: "2024-03-02 16:25:03"
-from: "corbin / my room"
-updatedFrom: "LEX B6", "corbin, living room sofa"
----
-
-# styling webkit-scroll-value in safari
-#evergreen
 
 Before styling `webkit-scroll-value` in Safari, it's essential to reset its existing styles. Otherwise, your style wont be applied.
 

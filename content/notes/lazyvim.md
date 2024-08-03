@@ -1,9 +1,7 @@
 ---
 title: "LazyVim"
+date: "May 1st, 2024"
 ---
-
-# LazyVim
-#evergreen
 
 [LazyVim](https://www.lazyvim.org/) lets you customize your terminal super easy. It also comes with vast number of plugins pre-configured.
 

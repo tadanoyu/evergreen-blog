@@ -1,9 +1,7 @@
 ---
 title: "Signing git commits"
+date: "May 15th, 2024"
 ---
-
-# Signing git commits
-#evergreen
 
 List your GPG keys ([[Check for existing GPG keys]]) and choose one to use for signing git commits. In this example, we will use `3AA5C34371567BD2` as the GPG key ID.
 

@@ -1,9 +1,7 @@
 ---
 title: "Data Structure"
+date: "June 10th, 2024"
 ---
-
-# Data Structure
-#evergreen
 
 A data structure is used to layout your data in certain order so that you can easily access, modify, delete, and/or analyze the data.
 

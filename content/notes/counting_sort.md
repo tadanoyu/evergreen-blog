@@ -1,9 +1,7 @@
 ---
 title: "Counting sort"
+date: "May 15t, 2024"
 ---
-
-# Counting sort
-#evergreen
 
 만약 입력으로 주어지는 수의 크기가 제한되어 있다면, counting 정렬을 사용하여 빠르게 정렬할 수 있다.
 

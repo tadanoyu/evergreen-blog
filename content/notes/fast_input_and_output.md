@@ -1,13 +1,8 @@
 ---
 title: "Fast Input and Output"
+date: "March 19th, 2024"
 ---
 
----
-created: "2024-03-19 05:38:00"
-from: "corbin / my room"
----
-# Fast Input and Output
-#evergreen
 When solving a P.S. problem, the following simple code can produce TLE (time limit exceeded) error. This is due to rust I/O flushing the buffer every time a value is printed using `println` macro.
 
 ```rust

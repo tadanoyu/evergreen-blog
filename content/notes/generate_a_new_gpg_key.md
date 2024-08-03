@@ -1,9 +1,7 @@
 ---
 title: "Generate a new GPG key"
+date: "May 15th, 2024"
 ---
-
-# Generate a new GPG key
-#evergreen
 
 Visit [GnuPG's Download Page](https://www.gnupg.org/download/) to install the GPG command line tools. Once installed, check its version using `gpg --version`.
 

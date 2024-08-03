@@ -1,9 +1,6 @@
 ---
 title: "sort string numbers using sort_by"
----
-
----
-created: "2024-03-17 20:00:00"
+date: "March 17th, 2024"
 ---
 
 # sort string numbers using sort_by

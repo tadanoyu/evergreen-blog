@@ -1,12 +1,7 @@
 ---
 title: "now page"
----
-
-# now page
-#evergreen
-
-_updated ー 2024-06-06, from KY_
-
+date: "May 8th, 2024"
+updated: "June 6th, 2024"
 ---
 
 ### Current Morning Routine

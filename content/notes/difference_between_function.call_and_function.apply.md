@@ -1,14 +1,7 @@
 ---
 title: "Difference between function.call and function.apply"
+date: "March 2nd, 2024"
 ---
-
----
-created: "2024-03-02 16:09:00"
-from: "corbin / my room"
----
-
-# Difference between function.call and function.apply
-#evergreen
 
 Both methods are used to call a function, but they differ by argument type. `function.apply` expects an array and `function.call` expects a comma separated values.
 

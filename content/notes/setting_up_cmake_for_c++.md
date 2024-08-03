@@ -1,9 +1,7 @@
 ---
 title: "Setting up cmake for C++"
+date: "June 10th, 2024"
 ---
-
-# Setting up cmake for C++
-#evergreen
 
 Install `cmake` using [[Homebrew]].
 

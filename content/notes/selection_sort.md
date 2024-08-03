@@ -1,9 +1,7 @@
 ---
 title: "Selection sort"
+date: "May 15th, 2024"
 ---
-
-# Selection sort
-#evergreen
 
 ```rust
 fn selection_sort(nums: &mut Vec<i32>) {

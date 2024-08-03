@@ -1,9 +1,7 @@
 ---
 title: "Homebrew"
+date: "May 1st, 2024"
 ---
-
-# Homebrew
-#evergreen #pnoun/tools
 
 [Homebrew](https://formulae.brew.sh/) is a package manager for macOS. You can use it to easily install either GUI or CLI applications.
 
