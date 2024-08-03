@@ -1,9 +1,7 @@
 ---
 title: "Rename the master branch to main"
+date: "May 15th, 2024"
 ---
-
-# Rename the master branch to main
-#evergreen
 
 Rename the local `master` branch to `main`.
 ```sh

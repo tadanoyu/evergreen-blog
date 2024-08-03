@@ -1,14 +1,7 @@
 ---
 title: "Side Project - Things I Want"
+date: "July 9th, 2023"
 ---
-
----
-created: '2023-07-09 11:08:00'
-from: 'corbin / my room'
----
-
-# Side Project - Things I Want
-#evergreen
 
 ![](Side%20Project%20-%20Things%20I%20Want/things-i-want.gif)
 - Project Repository: https://github.com/rolemadelen/things-i-want

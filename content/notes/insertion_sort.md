@@ -1,9 +1,7 @@
 ---
 title: "Insertion sort"
+date: "May 15th, 2024"
 ---
-
-# Insertion sort
-#evergreen
 
 ```rust
 fn insertion_sort(nums: &mut Vec<i32>) {

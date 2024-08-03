@@ -1,14 +1,7 @@
 ---
 title: "Command Pattern"
+date: 'February 3rd, 2024'
 ---
-
----
-created: '2024-02-03 14:28:00'
-from: "corbin, living room sofa"
----
-
-# Command Pattern
-#evergreen
 
 A Command Pattern is a behavioral design pattern which focuses on how objects interact and communicate with other objects. 
 

@@ -1,10 +1,6 @@
 ---
 title: "Help is not an obligation; it's just an act of kindness"
----
-
----
-created: '2024-01-30 05:49:00'
-from: "corbin / my room"
+date: "January 30th, 2024"
 ---
 
 # Help is not an obligation; it's just an act of kindness

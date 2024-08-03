@@ -1,14 +1,7 @@
 ---
 title: "night owls can benefit from miracle morning"
+date: 'March 2nd, 2024'
 ---
-
----
-created: '2024-03-02 18:07:00'
-from: "corbin / my room"
----
-
-# night owls can benefit from miracle morning
-#evergreen
 
 Miracle Morning is not about waking up early at 4 or 5 AM. It doesn't prescribe a specific wake-up time; instead, it's more of a ritual designed to help you start your day with a purpose. With that being said, yes, even night owls can adopt the Miracle Morning routine and benefit from it.
 

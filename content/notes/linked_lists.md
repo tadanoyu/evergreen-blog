@@ -1,9 +1,7 @@
 ---
 title: "Linked Lists"
+date: "June 13th, 2024"
 ---
-
-# Linked Lists
-#evergreen
 
 Linked List is a linear [[Data Structure]] that is more dynamic than the [[Arrays]]. Unlike the array, data in linked lists are not contiguous. They are scattered apart in the memory. So each **node**, an element in the list, not only contains a data but also the memory address of the next node, which enable us to navigate between nodes in the list.
 

@@ -1,14 +1,7 @@
 ---
 title: "html2canvas generates blurry images"
+date: "April 3rd, 2024"
 ---
-
----
-created: '2024-04-03 16:59:18'
-from: "corbin / my room"
----
-
-# html2canvas generates blurry images
-#evergreen
 
 ![](html2canvas%20generates%20blurry%20images/yourtrack-error2.webp)
 You can use `scale` option in the code to increase the resolution.

@@ -1,9 +1,7 @@
 ---
 title: "Different linked lists have different node structures"
+date: "June 13th, 2024"
 ---
-
-# Different linked lists have different node structures
-#evergreen
 
 Singly Linked List
 ```cpp

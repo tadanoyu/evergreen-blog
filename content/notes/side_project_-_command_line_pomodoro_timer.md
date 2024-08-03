@@ -1,14 +1,7 @@
 ---
 title: "Side Project - Command Line Pomodoro Timer"
+date: "March 22nd, 2024"
 ---
-
----
-created: '2024-03-22 22:30:00'
-from: 'corbin / my room'
----
-
-# Side Project - Command Line Pomodoro Timer
-#evergreen
 
 As I'm learning Rust, I decided to go for a project. But what should I make? Choosing what to make is always the hardest part when it comes to a side project. 
 

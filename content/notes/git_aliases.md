@@ -1,9 +1,7 @@
 ---
 title: "git aliases"
+date: "May 1st, 2024"
 ---
-
-# git aliases
-#evergreen
 
 My git aliases for the [[fish shell]]. I created a file `git_aliases.fish` and add it to `~/.config/fish/conf.d/`.
 

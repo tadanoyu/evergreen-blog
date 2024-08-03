@@ -1,15 +1,7 @@
 ---
 title: "Differences between array.filter and array.map"
+date: 'February 13th, 2023'
 ---
-
----
-created: '2023-02-13 11:45:00'
-from: '平塚駅のスタバ'
-updatedFrom: 'LEX B6', 'corbin, living room sofa'
----
-
-# Differences between array.filter and array.map
-#evergreen
 
 The `filter` function is used to select specific items from the original array based on a condition, while the `map` function is used to create a new array by applying a transformation to each item of the original array.
 

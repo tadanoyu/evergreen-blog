@@ -1,15 +1,7 @@
 ---
 title: "Publish your Rust Project on Homebrew using GitHub Releases"
+date: "March 25th, 2024"
 ---
-
----
-created: "2024-03-25 05:50:00"
-from: "corbin, my room"
-updatedFrom: "Delta DL159 DTW-ICN", "corbin, living room sofa"
----
-
-# Publish your Rust Project on Homebrew using GitHub Releases
-#evergreen
 
 You have to have your project setup with `cargo`.
 

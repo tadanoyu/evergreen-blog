@@ -1,9 +1,7 @@
 ---
 title: "Clone all repositories using GitHub CLI"
+date: "April 30th, 2024"
 ---
-
-# Clone all repositories using GitHub CLI
-#evergreen
 
 ## tl;dr
 ```shell

@@ -1,9 +1,7 @@
 ---
 title: "Sieve of Eratosthenes"
+date: "May 18th, 2024"
 ---
-
-# Sieve of Eratosthenes
-#evergreen
 
 The Sieve of Eratosthenes is an algorithm used to find all [[prime numbers]] up to a given value `N`.
 

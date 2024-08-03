@@ -1,9 +1,7 @@
 ---
 title: "Square Root Optimization"
+date: "May 18th, 2024"
 ---
-
-# Square Root Optimization
-#evergreen
 
 To achieve a more efficient [[primality test]] algorithm, we can limit our checks to numbers up to the square root of `n`.
 

@@ -1,9 +1,7 @@
 ---
 title: "Let the default shell start up with tmux"
+date: "May 1st, 2024"
 ---
-
-# Let the default shell start up with tmux
-#evergreen
 
 ## Kitty
 Open the configuration file: `Settings` or `⌘ + ,` on macOS.

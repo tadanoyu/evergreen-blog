@@ -1,13 +1,35 @@
-.main {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 700px;
-}
+.post {
+    font-family: inherit;
+    max-width: 600px;
+    margin: 5rem auto 10rem auto;
+    padding: 0 1rem;
 
-.content {
-    border: 1px solid blue;
-    width: 100%;
-    height: 100vh;
+    &__header {
+        margin-bottom: 3rem;
 
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .date {
+            color: #777;
+        }
+    }
+
+    p {
+        line-height: 1.75;
+    }
+
+    pre > code {
+        max-width: 600px;
+        width: 100%;
+        display: inline-block;
+        overflow-x: scroll;
+    }
+
+    p > code {
+        background-color: #dcdcdc;
+        padding: 0.15rem 0.25rem;
+        border-radius: 0.15rem;
+    }
 }

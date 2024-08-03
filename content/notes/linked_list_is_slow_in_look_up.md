@@ -1,9 +1,7 @@
 ---
 title: "Linked list is slow in look up"
+date: "June 2nd, 2024"
 ---
-
-# Linked list is slow in look up
-#evergreen
 
 In order to find a specific data in a linked list, one must start from the _head_ node and traverse through to find the target node. This takes linear time complexity which is very slow. 
 

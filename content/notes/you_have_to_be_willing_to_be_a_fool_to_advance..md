@@ -1,9 +1,7 @@
 ---
 title: "You have to be willing to be a fool to advance."
+date: "June 12th, 2024"
 ---
-
-# You have to be willing to be a fool to advance.
-#evergreen
 
 모든 배움은, '모름'을 인지하는 상황에서 시작된다. '모름'을 부끄러워하거나 '바보'가 되는것이 두렵다면 앞으로 나아갈 수 없다. 
 

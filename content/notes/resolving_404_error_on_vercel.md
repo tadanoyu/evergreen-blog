@@ -1,9 +1,7 @@
 ---
 title: "Resolving 404 error on Vercel"
+date: "May 18th, 2024"
 ---
-
-# Resolving 404 error on Vercel
-#evergreen
 
 Add the following to the `vercel.json` file:
 

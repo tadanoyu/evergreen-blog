@@ -1,9 +1,7 @@
 ---
 title: "Create the SSH configuration file"
+date: "May 15th, 2024"
 ---
-
-# Create the SSH configuration file
-#evergreen
 
 After creating a new SSH key ([[Generate a new SSH key]]), you can create a SSH configuration file to let every terminal sessions pick up this new SSH key.
 

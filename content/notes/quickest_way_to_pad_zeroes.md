@@ -1,9 +1,7 @@
 ---
 title: "Quickest way to pad zeroes"
+date: "May 18th, 2024"
 ---
-
-# Quickest way to pad zeroes
-#evergreen
 
 Let's say you want to ensure that numbers are always represented in two digits, padding zeroes if the number is a single digit.
 

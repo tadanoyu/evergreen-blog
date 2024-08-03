@@ -1,9 +1,7 @@
 ---
 title: "Configure aliases in the fish shell"
+date: "May 1st, 2024"
 ---
-
-# Configure aliases in the fish shell
-#evergreen
 
 You can configure aliases in fish shell by two ways. One way by manually adding aliases in the file `alias.fish` located in  `~/.config/fish/conf.d`. As long as the extension is `.fish`, you can name the file however you like. You can also create multiple files to separate aliases if you want (e.g. [[git aliases]]).
 

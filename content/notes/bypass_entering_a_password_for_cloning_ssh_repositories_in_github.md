@@ -1,9 +1,7 @@
 ---
 title: "Bypass entering a password for cloning SSH repositories in GitHub"
+date: "April 30th, 2024"
 ---
-
-# Bypass entering a password for cloning SSH repositories in GitHub
-#evergreen
 
 I was trying to [[Clone all repositories using GitHub CLI]] but it kept prompting password for my github account for each clone. I was looking for a way to bypass this and the key was in SSH configuration.
 

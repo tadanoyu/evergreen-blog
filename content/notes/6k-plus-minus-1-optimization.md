@@ -1,11 +1,9 @@
 ---
-title: "6k-plus-minus-1-optimization"
+title: "6k ± 1 Optimization"
+date: "May 18th, 2024"
 ---
 
-# 6k ± 1 Optimization
-#evergreen
-
-We can optimize the [[Primality Test]] algorithm by using 6k ± 1. This expression comes from the fact that all [[Prime numbers]], except for 2 and 3, can be expressed in the form of `6K-1` or `6K+1`.
+We can optimize the [Primality Test](./primality_test) algorithm by using 6k ± 1. This expression comes from the fact that all [Prime numbers](./prime_numbers), except for 2 and 3, can be expressed in the form of `6K-1` or `6K+1`.
 
 - 6k
 - 6K + 1 & 6K - 1

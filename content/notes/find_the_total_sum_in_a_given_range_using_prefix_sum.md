@@ -1,9 +1,7 @@
 ---
 title: "Find the total sum in a given range using prefix sum"
+date: "May 15th, 2024"
 ---
-
-# Find the total sum in a given range using prefix sum
-#evergreen
 
 A `prefix sum` or `cumulative sum` is an algorithm used to find the total sum in a given range.
 

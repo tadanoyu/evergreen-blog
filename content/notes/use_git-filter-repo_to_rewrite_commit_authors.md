@@ -1,9 +1,7 @@
 ---
 title: "Use git-filter-repo to rewrite commit authors"
+date: "April 30th, 2024"
 ---
-
-# Use git-filter-repo to rewrite commit authors
-#evergreen
 
 [[git-filter-repo]] is a tool to rewrite github repository commit history. It can be used to rewrite authors information on a commit.
 
@@ -21,9 +19,9 @@ Feel free to add as many `OLD NAME` and `OLD EMAIL` entries as necessary for mul
 For example,
 
 ```text
-Madelen Yoo <myoo@pm.me> John Doe <john@doe.com>
-Madelen Yoo <myoo@pm.me> John Doe <johndoe@example.com>
-Madelen Yoo <myoo@pm.me> Jane Doe <jane-doe@example.com>
+Jii Yoo <rolemadelen@pm.me> John Doe <john@doe.com>
+Jii Yoo <rolemadelen@pm.me> John Doe <johndoe@example.com>
+Jii Yoo <rolemadelen@pm.me> Jane Doe <jane-doe@example.com>
 ```
 
 ## git filter-repo

@@ -1,9 +1,7 @@
 ---
 title: "Check for existing GPG keys"
+date: "May 15th, 2024"
 ---
-
-# Check for existing GPG keys
-#evergreen
 
 Use the following command to check for any existing GPG keys. This wont list key IDs.
 ```shell

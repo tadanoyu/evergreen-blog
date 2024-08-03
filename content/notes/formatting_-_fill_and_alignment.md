@@ -1,15 +1,7 @@
 ---
 title: "Formatting - fill and alignment"
+date: "April 11th, 2024"
 ---
-
----
-created: "Thu, Apr 11, 2024 10:14 AM"
-from: "Korea, bus 대구->서울"
-updatedFrom: "corbin, living room sofa"
----
-
-# Formatting - fill and alignment
-#evergreen
 
 left-aligned in 20 columns, including the text.
 ```rust

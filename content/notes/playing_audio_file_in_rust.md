@@ -1,15 +1,7 @@
 ---
 title: "playing audio file in rust"
+date: "March 20th, 2024"
 ---
-
----
-created: "2024-03-20 17:00:00"
-from: "corbin / my room"
-updatedFrom: "LEX B6", "corbin, living room sofa"
----
-
-# playing audio file in rust
-#evergreen
 
 You can use `rodio` crate, an audio playback library, to stream an audio.
 

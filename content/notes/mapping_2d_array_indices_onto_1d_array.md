@@ -1,9 +1,7 @@
 ---
 title: "Mapping 2D array indices onto 1D array"
+date: "May 15th, 2024"
 ---
-
-# Mapping 2D array indices onto 1D array
-#evergreen
 
 The general formula for mapping 2D array indices onto 1D array is: `width * row + col`.
 

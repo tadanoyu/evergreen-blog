@@ -1,9 +1,7 @@
 ---
 title: "Static Array"
+date: "June 11th, 2024"
 ---
-
-# Static Array
-#evergreen
 
 There are [[Different types of an array]] and _static array_ is one of them.
 

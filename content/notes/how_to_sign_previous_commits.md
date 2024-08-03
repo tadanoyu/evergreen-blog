@@ -1,9 +1,7 @@
 ---
 title: "How to sign previous commits"
+date: "May 18th, 2024"
 ---
-
-# How to sign previous commits
-#evergreen
 
 Use `git log --show-signature` and find the oldest commit that hasn't been signed off. Let say that commit's hash is `222fd607`.
 

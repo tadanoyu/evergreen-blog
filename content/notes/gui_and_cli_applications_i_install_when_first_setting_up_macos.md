@@ -1,9 +1,7 @@
 ---
 title: "GUI and CLI applications I install when first setting up macOS"
+date: "May 2nd, 2024"
 ---
-
-# GUI and CLI applications I install when first setting up macOS
-#evergreen
 
 These are applications I first install when I set up a fresh mac. I'm use [[Homebrew]] to make installation quick and easy.
 

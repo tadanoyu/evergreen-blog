@@ -1,15 +1,7 @@
 ---
 title: "don't use println in competitive programming"
+date: "March 31st, 2024"
 ---
-
----
-created: "2024 March 31"
-updated: "2024 April 02 (Tuesday) 08:29pm"
-from: "corbin / my room"
----
-
-# don't use println in competitive programming
-#evergreen
 
 `println!` flushes the buffer every time you use it by default. This can lead to significant loss in performance and hurt you especially in competitive programming. Use `writeln!()` instead and stay away from `println!()`. 
 

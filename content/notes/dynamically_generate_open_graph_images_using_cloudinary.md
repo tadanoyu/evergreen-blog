@@ -1,9 +1,7 @@
 ---
 title: "Dynamically generate Open Graph Images using Cloudinary"
+date: "May 18th, 2024"
 ---
-
-# Dynamically generate Open Graph Images using Cloudinary
-#evergreen
 
 We can use Cloudinary, an image hosting service and CDN, to dynamically generate open graph images for each blog posts.
 

@@ -1,14 +1,7 @@
 ---
 title: "Side Project - YourTrack"
+date: "February 18th, 2024"
 ---
-
----
-created: "2024-02-18 12:58:17"
-from: "corbin, living room sofa"
----
-
-# Side Project - YourTrack
-#evergreen
 
 ![](Side%20Project%20-%20YourTrack/yourtrack.webp)
 

@@ -1,9 +1,7 @@
 ---
 title: "Social media handle"
+date: "April 29th, 2024"
 ---
-
-# Social media handle
-#evergreen
 
 A social media handle is a public username that represents people on social media websites.
 
