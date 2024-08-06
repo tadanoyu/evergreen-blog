@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 export default function Home() {
   
   return (
-    <div className={styles.main}>
+    <div className={`${styles.main}`}>
       <NotesList />
     </div>
   )

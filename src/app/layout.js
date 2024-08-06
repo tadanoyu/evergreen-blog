@@ -1,3 +1,5 @@
+import './global.css'
+
 export const metadata = {
   title: "Evergreen",
   description: "Jii's Evergreen Notes",

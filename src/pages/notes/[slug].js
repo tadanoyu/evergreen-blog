@@ -6,6 +6,23 @@ import html from 'remark-html'
 import styles from "./notes.module.scss"
 
 export default function Note({ frontMatter, content }) {
+
+  function parseMarkdownLinks(content) {
+    // Regular expression to match [[text|display]] or [[text]] patterns
+    const linkRegex = /\[\[(.*?)(?:\|(.*?))?\]\]/g;
+  
+    // Replace [[text|display]] or [[text]] with <a href="/notes/slug">display or text</a>
+    return content.replace(linkRegex, (match, text, display) => {
+      // If there's no display text (i.e., it's just [[text]]), use the text as display
+      const displayText = display || text;
+      
+      // Use the text (not display) for the slug
+      const slug = text.toLowerCase().replace(/\s+/g, '_');
+      
+      return `<a href="/notes/${slug}">${displayText}</a>`;
+    });
+  }
+
   return (
     <div className={`${styles.post}`}>
       <div className={styles.post__header}>
@@ -15,8 +32,11 @@ export default function Note({ frontMatter, content }) {
         <div className={styles.date}>
           {frontMatter.date}
         </div>
+        <div>
+          {frontMatter.autor}
+        </div>
       </div>
-      <div dangerouslySetInnerHTML={{ __html: content }}/>
+      <div dangerouslySetInnerHTML={{ __html: parseMarkdownLinks(content) }}/>
     </div>
   )
 }

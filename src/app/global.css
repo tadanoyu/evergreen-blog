@@ -1,0 +1,10 @@
+@import '/public/fonts/satoshi/satoshi.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4169e1;
+}
