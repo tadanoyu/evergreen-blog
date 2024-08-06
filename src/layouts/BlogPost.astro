@@ -1,0 +1,88 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import '@fontsource-variable/inter';
+
+type Props = CollectionEntry<'notes'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.blur {
+				position: fixed;
+				top: 0;
+				width: 100%;
+				height: 100px;
+				backdrop-filter: blur(2px);
+				background-color: transparent;
+				-webkit-mask-image: linear-gradient(180deg, #fff, #fff, transparent);
+				mask-image: linear-gradient(180deg, #fff, #fff, transparent);
+				--webkit-mask-image: linear-gradient(180deg, #fff, #fff, transparent);
+			}
+			main {
+				font-family: 'Inter Variable', sans-serif;
+			}
+			.title {
+				margin-bottom: 2rem;
+				padding: 1em 0;
+				line-height: 1;
+			}
+			.title .date,
+			.title .author {
+				font-size: var(--sm);
+			}
+
+			.title h1 {
+				margin-top: 0;
+			}
+
+			.title h1,
+			.title .author,
+			.title .date {
+				margin-bottom: 0.75rem;
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="blur"></div>
+		<main>
+			<article>
+				<div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<h1>{title}</h1>
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<div class="author">
+							<span>by</span>
+							<a href="/">Jii Yoo</a>
+						</div>
+						<!-- <hr /> -->
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
