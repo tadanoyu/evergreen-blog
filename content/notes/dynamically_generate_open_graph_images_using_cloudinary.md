@@ -17,7 +17,7 @@ https://res.cloudinary.com/dtxawyaxa/image/upload/w_1600,h_836,q_100/l_text:Robo
 
 We need a couple of preparations before we start.
 
-First, we need to create an account on [Cloudinary](https://cloudinary.com/). You can easily sign up using your Google or GitHub account. 
+First, we need to create an account on Cloudinary [(Link)](https://cloudinary.com/). You can easily sign up using your Google or GitHub account. 
 
 Next, we need a base layer which we'll use to generate our Open graph (OG) Images. We'll use this image, `base-layer.png`. 
 

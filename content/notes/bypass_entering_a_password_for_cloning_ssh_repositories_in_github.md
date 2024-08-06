@@ -40,6 +40,5 @@ gh ssh-key add ~/.ssh/id_ed25519.pub
 
 Now it shouldn't ask for the password.
 
----
 ## References
 - [Using multiple GitHub accounts with SSH keys](https://gist.github.com/oanhnn/80a89405ab9023894df7)

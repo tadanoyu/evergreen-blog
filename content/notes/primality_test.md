@@ -40,4 +40,4 @@ const isPrime = (n: number): boolean => {
 
 While we have reduced the number of operations, this algorithm still has a linear time complexity. 
 
-There are several other ways to implement the algorithm to enhance the performance. Either [[square root optimization]] or [[6k ± 1 optimization]]  can be used to find the primes in `O(sqrt(N))`. Another way is to use the [[Sieve of Eratosthenes]]]]. It is a bit more complex to implement it, but this algorithm has a time complexity of `O(n log log n)`.
+There are several other ways to implement the algorithm to enhance the performance. Either [[square root optimization]] or [[6k-plus-minus-1-optimization|6k ± 1 optimization]]  can be used to find the primes in `O(sqrt(N))`. Another way is to use the [[Sieve of Eratosthenes]]. It is a bit more complex to implement it, but this algorithm has a time complexity of `O(n log log n)`.

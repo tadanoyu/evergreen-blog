@@ -23,4 +23,4 @@ const isPrime = (n: number): boolean => {
 }
 ```
 
-The time complexity of this algorithm is `O(sqrt(N))`. We can further optimize the algorithm by leveraging the properties of `6K-1` and `6K+1` ([[6k ± 1 Optimization]]).
+The time complexity of this algorithm is `O(sqrt(N))`. We can further optimize the algorithm by leveraging the properties of `6K-1` and `6K+1` ([[6k-plus-minus-1-optimization|6k ± 1 Optimization]]).
