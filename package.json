@@ -1,22 +1,21 @@
 {
-  "name": "evergreen",
-  "version": "0.1.0",
-  "private": true,
+  "name": "popular-pulsar",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "fs": "0.0.1-security",
-    "gray-matter": "^4.0.3",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1",
-    "remark-prism": "^1.3.6",
-    "sass": "^1.77.8"
+    "@astrojs/mdx": "^3.1.3",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@fontsource-variable/inter": "^5.0.20",
+    "@fontsource/oxygen": "^5.0.13",
+    "astro": "^4.13.1",
+    "rehype-external-links": "^3.0.0"
   }
 }
