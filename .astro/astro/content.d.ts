@@ -215,13 +215,6 @@ declare module 'astro:content' {
   collection: "archives";
   data: any
 } & { render(): Render[".md"] };
-"my-macbook-setup.md": {
-	id: "my-macbook-setup.md";
-  slug: "my-macbook-setup";
-  body: string;
-  collection: "archives";
-  data: any
-} & { render(): Render[".md"] };
 "now.md": {
 	id: "now.md";
   slug: "now";
@@ -472,6 +465,13 @@ declare module 'astro:content' {
 "250205072700.md": {
 	id: "250205072700.md";
   slug: "250205072700";
+  body: string;
+  collection: "note";
+  data: InferEntrySchema<"note">
+} & { render(): Render[".md"] };
+"250208110343.md": {
+	id: "250208110343.md";
+  slug: "250208110343";
   body: string;
   collection: "note";
   data: InferEntrySchema<"note">
