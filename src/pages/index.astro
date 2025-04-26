@@ -32,7 +32,22 @@ const t = useTranslations(lang);
 				& > blockquote {
 					margin: 0.5rem 0;
 				}
+			}
 
+			.hand {
+				display: inline-block;
+				rotate: 0deg;
+				animation: handMotion 1s infinite;
+				transform-origin: left;
+			}
+
+			@keyframes handMotion {
+				0% {
+					rotate: 0deg;
+				}
+				50% {
+					rotate: -20deg;
+				}
 			}
 
 			.menu {
@@ -56,8 +71,7 @@ const t = useTranslations(lang);
 				<h1>{t('home.name')} <span class="handle"> / @{t('home.username')}</span></h1>
 			</div>
 			<div class="content">
-				<p>{t('home.text')}</p>
-
+				<p>{t('home.text')}<span class="hand">っ</span></p>
 				<div class="menu">
 					<ul role="navigation">
 						<li>

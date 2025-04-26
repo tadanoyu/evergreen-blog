@@ -9,7 +9,7 @@ export const languages = {
     en: {
       'home.name': '지원',
       'home.username': 'manabeur',
-      'home.text': "안녕하세요 (・_・)ノ",
+      'home.text': "안녕하세요 (° ▽ °)",
       'home.quote': '기록하기를 좋아하는 인간에게 축복을.',
       'home.menu1': {
         'title':'끄적임',
