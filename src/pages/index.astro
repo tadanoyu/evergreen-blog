@@ -53,7 +53,7 @@ const t = useTranslations(lang);
 	<body>
 		<main>
 			<div class="header">
-				<h1>{t('home.name')} <span class="handle">/ manabeur</span></h1>
+				<h1>{t('home.name')} <span class="handle"> / @{t('home.username')}</span></h1>
 			</div>
 			<div class="content">
 				<p>{t('home.text')}</p>
@@ -61,12 +61,12 @@ const t = useTranslations(lang);
 				<div class="menu">
 					<ul role="navigation">
 						<li>
-							<a href="/note">{t('home.menu2')['title']}</a>
-							<span class="explanation">{t('home.menu2')['exp']}</span>
+							<a href="/note">{t('home.menu1')['title']}</a>
+							<span class="explanation">{t('home.menu1')['exp']}</span>
 						</li>
 						<li>
-							<a href="/writing">{t('home.menu1')['title']}</a>
-							<span class="explanation">{t('home.menu1')['exp']}</span>
+							<a href="/writing">{t('home.menu2')['title']}</a>
+							<span class="explanation">{t('home.menu2')['exp']}</span>
 						</li>
 					</ul>
 				</div>
