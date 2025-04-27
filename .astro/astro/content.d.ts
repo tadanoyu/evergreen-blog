@@ -152,13 +152,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"archives": {
-"12.md": {
-	id: "12.md";
-  slug: "12";
-  body: string;
-  collection: "archives";
-  data: any
-} & { render(): Render[".md"] };
 "a-key-could-be-of-any-type-in-a-hash-table.md": {
 	id: "a-key-could-be-of-any-type-in-a-hash-table.md";
   slug: "a-key-could-be-of-any-type-in-a-hash-table";
