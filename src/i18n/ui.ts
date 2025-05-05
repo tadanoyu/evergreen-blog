@@ -1,12 +1,12 @@
 export const languages = {
-    ko: 'Korean',
+    en: 'English',
     ja: 'Japanese',
   };
   
-  export const defaultLang = 'en';
+  export const defaultLang = 'ko';
   
   export const ui = {
-    en: {
+    ko: {
       'home.name': '지원',
       'home.username': 'manabeur',
       'home.text': "안녕하세요 (° ▽ °)",

@@ -6,7 +6,7 @@ pubDate: "Jan 01 2025 20:30:00"
 
 Jagged array, also known as irregular array, is an array of arrays. Difference between a multidimensional array is that each member can have a  different length producing rows of jagged edges.
 
-```textile
+```text
 *arr[4] 
             ---------------------
 arr[0] ---> | 0 | 1 | 2 |
@@ -62,7 +62,7 @@ int main(int argc, char**argv) {
 ```
 
 The above code produce the following result.
-```textile
+```text
 Array row #1: 0 1 2 
 Array row #2: 6 4 
 Array row #3: 1 7 6 8 9 

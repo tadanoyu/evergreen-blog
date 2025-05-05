@@ -130,7 +130,7 @@ const posts = (await getCollection('note')).sort((a, b) => {
 						{
 							posts.map((post) => (
 								<li>
-									<a href={`/note/${post.slug}/`}>
+									<a href={`/note/${post.id}/`}>
 										<div class="head">
 											<div class="category">{`{${post.data.folge}} ${post.data.uid}`}</div>
 											<span>{post.data.title}</span>

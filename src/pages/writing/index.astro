@@ -8,17 +8,13 @@ import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const posts = (await getCollection('writing')).sort((a, b) => {
-	// const dateA = a.data.updatedDate?.valueOf() || a.data.pubDate.valueOf();
-	// const dateB = b.data.updatedDate?.valueOf() || b.data.pubDate.valueOf();
-	const dateA = a.data.pubDate.valueOf();
-	const dateB = b.data.pubDate.valueOf();
-
-	return dateB - dateA;
+	return new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf();
 });
 
 ---
 
 <!doctype html>
+{console.log(Astro.url)}
 <html lang="en">
 	<head>
 		<title>writing | jiiyoo.me</title>
@@ -119,9 +115,9 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 						{
 							posts.map((post) => (
 								<li>
-									<a href={`/writing/${post.slug}/`}>
+									<a href={`/writing/${post.id}/`}>
 										<div class="head">
-											<div class="date">{post.data.pubDate.toLocaleDateString('en-us', {
+											<div class="date">{new Date(post.data.pubDate).toLocaleDateString('en-us', {
 												year: 'numeric',
 												month: 'short',
 												day: 'numeric',

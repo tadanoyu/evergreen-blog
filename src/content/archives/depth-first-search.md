@@ -8,7 +8,7 @@ Depth-First Search (DFS) is a method used for traversing trees and graphs. In DF
 
 Graphs can have cycles and disconnected components, whereas trees are always connected and acyclic. This makes DFS in trees simpler to implement compared to graphs.
 
-```textile
+```text
 
 Given a tree:
 
@@ -50,7 +50,7 @@ end
 
 Unlike a tree where DFS order is fixed due to its hierarchical structure and single root (fixed starting point), graphs allow multiple ways to traverse them. Any node can be a starting point for DFS, and even the same starting node can produce different results depending on the DFS implementation (recursive vs. iterative) and the order of neighbors.
 
-```textile
+```text
     0
    / \
   1---2
