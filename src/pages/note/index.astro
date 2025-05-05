@@ -1,12 +1,10 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { BaseHead, Footer } from '@components/index';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { useTranslations } from '../../i18n/utils';
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const t = useTranslations();
 const posts = (await getCollection('note')).sort((a, b) => {
 	const category_compare = (id_1: string, id_2: string) => {
         const len = Math.min(id_1.length, id_2.length);
