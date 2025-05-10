@@ -19,5 +19,9 @@ export const languages = {
         'title':'이야기',
         'exp': '내 이야기를 나누는 공간'
       },
+      'home.menu3': {
+        'title':'지내기',
+        'exp': '지금의 나를 담는 공간'
+      },
     },
   } as const;
