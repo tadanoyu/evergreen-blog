@@ -68,6 +68,17 @@ h1, h2, h3 {
 ul, ol {
 	padding-left: 1rem;
 	margin-bottom: 2rem;
+
+	/* Chrome, Safari 등 일부 브라우저에서만 작동 */
+	& > li:has(input[type="checkbox"]) {
+		list-style: none;
+
+		& > input {
+			display: inline-block;
+			margin-left: -1rem;
+		}
+	}
+  
 }
 
 ul ul,
