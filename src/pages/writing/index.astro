@@ -6,7 +6,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 const t = useTranslations();
 const posts = (await getCollection('writing')).sort((a, b) => {
-	return new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf();
+	let dateA = a.data.updatedDate ?? a.data.pubDate
+	let dateB = b.data.updatedDate ?? b.data.pubDate
+
+	return new Date(dateB).valueOf() - new Date(dateA).valueOf();
 });
 
 ---
@@ -39,6 +42,7 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 						padding: 0.2rem;
 						transition: all 0.2s ease-in-out;
 					}
+
 				}
 				
 				& > ul {
@@ -51,10 +55,14 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 					margin-bottom: 0.5rem;
 
 					&:hover{
-						a span {
+						a .title {
 							background-color: rgb(var(--gray-light));
 							border-radius: 3px;
 						}
+					}
+
+					& .update {
+						font-style: italic;
 					}
 				}
 
@@ -114,12 +122,14 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 								<li>
 									<a href={`/writing/${post.id}/`}>
 										<div class="head">
-											<div class="date">{new Date(post.data.pubDate).toLocaleDateString('en-us', {
+											<div class="date">
+												{new Date(post.data.updatedDate ?? post.data.pubDate).toLocaleDateString('en-us', {
 												year: 'numeric',
 												month: 'short',
 												day: 'numeric',
-											})}</div>
-											<span>{post.data.title}</span>
+												})}
+											</div>
+											<span class="title">{post.data.title}</span>
 										</div>
 									</a>
 								</li>
