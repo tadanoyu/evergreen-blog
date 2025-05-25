@@ -6,8 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 const t = useTranslations();
 const posts = (await getCollection('writing')).sort((a, b) => {
-	let dateA = a.data.updatedDate ?? a.data.pubDate
-	let dateB = b.data.updatedDate ?? b.data.pubDate
+	let dateA = a.data.pubDate
+	let dateB = b.data.pubDate
 
 	return new Date(dateB).valueOf() - new Date(dateA).valueOf();
 });
@@ -123,7 +123,7 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 									<a href={`/writing/${post.id}/`}>
 										<div class="head">
 											<div class="date">
-												{new Date(post.data.updatedDate ?? post.data.pubDate).toLocaleDateString('en-us', {
+												{new Date(post.data.pubDate).toLocaleDateString('en-us', {
 												year: 'numeric',
 												month: 'short',
 												day: 'numeric',
