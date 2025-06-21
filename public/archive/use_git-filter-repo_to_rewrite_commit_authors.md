@@ -20,9 +20,9 @@ Feel free to add as many `OLD NAME` and `OLD EMAIL` entries as necessary for mul
 For example,
 
 ```text
-Madelen Yoo <myoo@pm.me> John Doe <john@doe.com>
-Madelen Yoo <myoo@pm.me> John Doe <johndoe@example.com>
-Madelen Yoo <myoo@pm.me> Jane Doe <jane-doe@example.com>
+Jii Yoo <jyoo@pm.me> John Doe <john@doe.com>
+Jii Yoo <jyoo@pm.me> John Doe <johndoe@example.com>
+Jii Yoo <jyoo@pm.me> Jane Doe <jane-doe@example.com>
 ```
 
 ## git filter-repo
