@@ -18,6 +18,19 @@ const t = useTranslations(lang);
 				align-items: center;
 				justify-content: space-between;
 				margin-bottom: 3rem;
+
+				& .lang_selector {
+					margin-top: 3.5rem;
+
+					& a {
+						padding: 0.25rem 0.5rem;
+						text-decoration: none;
+
+						&:hover {
+							cursor: pointer;
+						}
+					}
+				}
 			}
 			.handle {
 				font-style: italic;
@@ -69,6 +82,10 @@ const t = useTranslations(lang);
 		<main>
 			<div class="header">
 				<h1>{t('home.name')} <span class="handle"> / @{t('home.username')}</span></h1>
+				<div class="lang_selector">
+					<a href="/">가</a>
+					<a href="/ja">あぁ</a>
+				</div>
 			</div>
 			<div class="content">
 				<p>{t('home.text')}<span class="hand">っ</span></p>
