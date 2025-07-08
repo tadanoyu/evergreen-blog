@@ -9,6 +9,7 @@ const note = defineCollection({
       title: z.string(),
       folge: z.string(),
       uid: z.string(),
+      lang: z.string(),
       pubDate: z.string(),
       updatedDate: z.string().optional(),
     })
@@ -17,6 +18,7 @@ const writing = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/writing" }),
     schema: z.object({
       title: z.string(),
+      lang: z.string(),
       pubDate: z.string(),
       updatedDate: z.string().optional(),
     })

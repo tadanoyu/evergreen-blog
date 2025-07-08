@@ -4,13 +4,13 @@ import { BaseHead, Backlinks, Footer, Giscus, FormattedDate } from '@components/
 import { useTranslations } from '../i18n/utils';
 import '@fontsource-variable/noto-serif-kr';
 
-const t = useTranslations();
+const { title, pubDate, updatedDate, lang } = Astro.props.frontmatter;
+const t = useTranslations(lang);
 type Props = CollectionEntry<'writing'>['data'];
 
-const { title, pubDate, updatedDate } = Astro.props.frontmatter;
 ---
 
-<html lang="en">
+<html lang={lang ?? "ko"}>
 	<head>
 		<BaseHead title={title} />
 		<style lang="scss">
@@ -101,15 +101,15 @@ const { title, pubDate, updatedDate } = Astro.props.frontmatter;
 						<div class="navi">
 							<div class="author">
 								<span class="by">by</span>
-								<a href="/">{t('home.name')}</a>
+								<a href={`/${lang && lang != "ko" ? lang : ''}`}>{t('home.name')}</a>
 							</div>
 							<span class="separator"> … </span>
 							<div class="navi_item">
-								<a href="/note">{t('home.menu1')['title']}</a>
+								<a href=`${lang && lang != "ko" ? '/' + lang : ''}/note`>{t('home.menu1')['title']}</a>
 							</div>
 							<span class="separator">　|　</span>
 							<div class="navi_item">
-								<a href="/writing">{t('home.menu2')['title']}</a>
+								<a href=`${lang && lang != "ko" ? '/' + lang : ''}/writing`>{t('home.menu2')['title']}</a>
 							</div>
 						</div>
 					</div>
@@ -120,7 +120,7 @@ const { title, pubDate, updatedDate } = Astro.props.frontmatter;
 			</article>
 			<Backlinks />
 		</main>
-		<Footer />
+		<Footer lang={lang} />
 		<Giscus />
 	</body>
 </html>

@@ -1,40 +1,29 @@
 ---
 import { getCollection } from 'astro:content';
+import { useTranslations } from '../../../i18n/utils';
 import { BaseHead, Footer } from '@components/index';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { useTranslations } from '../../i18n/utils';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
 
-const t = useTranslations();
-const posts = (await getCollection('note')).sort((a, b) => {
-	const category_compare = (id_1: string, id_2: string) => {
-        const len = Math.min(id_1.length, id_2.length);
+const lang = "en";
+const t = useTranslations(lang);
+const posts = (await getCollection('writing')).sort((a, b) => {
+	let dateA = a.data.pubDate
+	let dateB = b.data.pubDate
 
-        // Compare each character's ASCII value
-        for (let i = 0; i < len; i++) {
-            const diff = id_1.charCodeAt(i) - id_2.charCodeAt(i);
-            if (diff !== 0) return diff; // Return the first difference
-        }
-
-        // If one is a prefix of the other, shorter one should come first
-        return id_1.length - id_2.length;
-    };
-
-	const folgeA = a.data.folge ?? "note"
-	const folgeB = b.data.folge ?? "note"
-    return category_compare(folgeA , folgeB);
+	return new Date(dateB).valueOf() - new Date(dateA).valueOf();
 });
 
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
-		<title>note | jiiyoo.me</title>
+		<title>diary / jiiyoo.me</title>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style lang="scss">
 			.header {
 				margin-bottom: 3rem;
-				
+
 				& > span,
 				.menu {
 					font-size: var(--sm);
@@ -54,6 +43,7 @@ const posts = (await getCollection('note')).sort((a, b) => {
 						padding: 0.2rem;
 						transition: all 0.2s ease-in-out;
 					}
+
 				}
 				
 				& > ul {
@@ -66,10 +56,14 @@ const posts = (await getCollection('note')).sort((a, b) => {
 					margin-bottom: 0.5rem;
 
 					&:hover{
-						a span {
+						a .title {
 							background-color: rgb(var(--gray-light));
 							border-radius: 3px;
 						}
+					}
+
+					& .update {
+						font-style: italic;
 					}
 				}
 
@@ -96,13 +90,12 @@ const posts = (await getCollection('note')).sort((a, b) => {
 				margin: 0 0.5rem;
 			}
 
-			.category {
+			.date {
 				display: block;
 				font-size: var(--xs);
 				// text-transform: lowercase;
 				color: #aaa;
 				margin-left: 0.25rem;
-				transition: all 0.2s ease;
 			}
 		</style>
 	</head>
@@ -110,16 +103,16 @@ const posts = (await getCollection('note')).sort((a, b) => {
 		<main>
 			<section>
 				<div class="header">
-					<h1>{t('home.menu1')['title']}</h1>
-					<span>{t('home.menu1')['exp']}</span>
+					<h1>{t('home.menu2')['title']}</h1>
+					<span>{t('home.menu2')['exp']}</span>
 					<div class="navi">
 						<div class="author">
 							<span class="by">by</span>
-							<a href="/">{t('home.name')}</a>
+							<a href="/en">{t('home.name')}</a>
 						</div>
-						<span class="separator"> … </span>
+						<span class="separator">・</span>
 						<div class="navi_item">
-							<a href="/writing">{t('home.menu2')['title']}</a>
+							<a href="/en/note">{t('home.menu1')['title']}</a>
 						</div>
 					</div>
 				</div>
@@ -127,12 +120,18 @@ const posts = (await getCollection('note')).sort((a, b) => {
 					<ul>
 						{
 							posts.map((post) => (
-								(post.data.lang == "ko" && (
+								(post.data.lang == lang && (
 									<li>
-										<a href={`/note/${post.id}/`}>
+										<a href={`/en/writing/${post.id}/`}>
 											<div class="head">
-												<div class="category">{`{${post.data.folge}} ${post.data.uid}`}</div>
-												<span>{post.data.title}</span>
+												<div class="date">
+													{new Date(post.data.pubDate).toLocaleDateString('en-us', {
+													year: 'numeric',
+													month: 'short',
+													day: 'numeric',
+													})}
+												</div>
+												<span class="title">{post.data.title}</span>
 											</div>
 										</a>
 									</li>
@@ -143,6 +142,6 @@ const posts = (await getCollection('note')).sort((a, b) => {
 				</div>
 			</section>
 		</main>
-		<Footer />
+		<Footer lang={lang} />
 	</body>
 </html>

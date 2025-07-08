@@ -1,14 +1,15 @@
 ---
 import BaseHead from '@components/BaseHead.astro';
 import Footer from '@components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { useTranslations } from '../i18n/utils';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { useTranslations } from '../../i18n/utils';
 
-const t = useTranslations();
+const lang = "en"
+const t = useTranslations(lang);
 ---
 
 <!doctype html>
-<html lang="ko">
+<html lang={lang}>
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style lang="scss">
@@ -74,21 +75,21 @@ const t = useTranslations();
 				<div class="menu">
 					<ul role="navigation">
 						<li>
-							<a href="/note">{t('home.menu1')['title']}</a>
+							<a href="/en/note">{t('home.menu1')['title']}</a>
 							<span class="explanation">{t('home.menu1')['exp']}</span>
 						</li>
 						<li>
-							<a href="/writing">{t('home.menu2')['title']}</a>
+							<a href="/en/writing">{t('home.menu2')['title']}</a>
 							<span class="explanation">{t('home.menu2')['exp']}</span>
 						</li>
 						<li>
-							<a href="/writing/12/">{t('home.menu3')['title']}</a>
+							<a href="/en/writing/12/">{t('home.menu3')['title']}</a>
 							<span class="explanation">{t('home.menu3')['exp']}</span>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</main>
-		<Footer />
+		<Footer lang={lang} />
 	</body>
 </html>

@@ -13,6 +13,9 @@
         "uid": {
           "type": "string"
         },
+        "lang": {
+          "type": "string"
+        },
         "pubDate": {
           "type": "string"
         },
@@ -27,6 +30,7 @@
         "title",
         "folge",
         "uid",
+        "lang",
         "pubDate"
       ],
       "additionalProperties": false

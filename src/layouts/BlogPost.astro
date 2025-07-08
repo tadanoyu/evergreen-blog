@@ -7,7 +7,7 @@ import '@fontsource-variable/noto-serif-kr';
 const t = useTranslations();
 type Props = CollectionEntry<'note'>['data'];
 
-const { title, pubDate, updatedDate } = Astro.props.frontmatter;
+const { title, pubDate, updatedDate, lang } = Astro.props.frontmatter;
 ---
 
 <html lang="en">
@@ -117,7 +117,7 @@ const { title, pubDate, updatedDate } = Astro.props.frontmatter;
 			</article>
 			<Backlinks />
 		</main>
-		<Footer />
+		<Footer lang={lang} />
 		<Giscus />
 	</body>
 </html>

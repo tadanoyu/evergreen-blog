@@ -20,8 +20,44 @@ export const languages = {
         'exp': '나의 이야기를 나누는 공간'
       },
       'home.menu3': {
-        'title':'머묾',
+        'title':'현재',
         'exp': '지금의 나를 담는 공간'
+      },
+    },
+    en: {
+      'home.name': 'Jii',
+      'home.username': 'harusani',
+      'home.text': "Hello, there (° ▽ °)",
+      'home.quote': 'Blessings to those who love to document their world.',
+      'home.menu1': {
+        'title':'note',
+        'exp': 'a space to declutter my brain'
+      },
+      'home.menu2': {
+        'title':'diary',
+        'exp': 'a space for little stories'
+      },
+      'home.menu3': {
+        'title':'present',
+        'exp': 'a space for my now'
+      },
+    },
+    ja: {
+      'home.name': 'ジー',
+      'home.username': 'harusani',
+      'home.text': "こんにちは (° ▽ °)",
+      'home.quote': '書き留めることを愛する人へ、祝福を。',
+      'home.menu1': {
+        'title':'書く',
+        'exp': '何でも記録する空間'
+      },
+      'home.menu2': {
+        'title':'話す',
+        'exp': '自分についてそっと話す空'
+      },
+      'home.menu3': {
+        'title':'現在',
+        'exp': '私の今を映す空間'
       },
     },
   } as const;

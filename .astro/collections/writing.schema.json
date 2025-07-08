@@ -7,6 +7,9 @@
         "title": {
           "type": "string"
         },
+        "lang": {
+          "type": "string"
+        },
         "pubDate": {
           "type": "string"
         },
@@ -19,6 +22,7 @@
       },
       "required": [
         "title",
+        "lang",
         "pubDate"
       ],
       "additionalProperties": false
