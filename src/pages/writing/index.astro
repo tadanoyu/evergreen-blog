@@ -23,6 +23,24 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 			.header {
 				margin-bottom: 3rem;
 
+				& .title {
+					display: flex;
+					justify-content: space-between;
+
+					& .lang_selector {
+						margin-top: 3.5rem;
+
+						& a {
+							padding: 0.25rem 0.5rem;
+							text-decoration: none;
+
+							&:hover {
+								cursor: pointer;
+							}
+						}
+					}
+				}
+
 				& > span,
 				.menu {
 					font-size: var(--sm);
@@ -92,7 +110,6 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 			.date {
 				display: block;
 				font-size: var(--xs);
-				// text-transform: lowercase;
 				color: #aaa;
 				margin-left: 0.25rem;
 			}
@@ -102,7 +119,13 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 		<main>
 			<section>
 				<div class="header">
-					<h1>{t('home.menu2')['title']}</h1>
+					<div class="title">
+						<h1>{t('home.menu1')['title']}</h1>
+						<div class="lang_selector">
+							<a href="/en/writing">Aa</a>
+							<a href="/ja/writing">あぁ</a>
+						</div>
+					</div>
 					<span>{t('home.menu2')['exp']}</span>
 					<div class="navi">
 						<div class="author">

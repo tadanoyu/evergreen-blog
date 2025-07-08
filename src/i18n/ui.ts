@@ -28,7 +28,7 @@ export const languages = {
       'home.name': 'Jii',
       'home.username': 'harusani',
       'home.text': "Hello, there (° ▽ °)",
-      'home.quote': 'Blessings to those who love to document their world.',
+      'home.quote': 'Blessings to those who love to record.',
       'home.menu1': {
         'title':'note',
         'exp': 'a space to declutter my brain'

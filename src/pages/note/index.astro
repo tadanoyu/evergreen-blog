@@ -34,6 +34,24 @@ const posts = (await getCollection('note')).sort((a, b) => {
 		<style lang="scss">
 			.header {
 				margin-bottom: 3rem;
+
+				& .title {
+					display: flex;
+					justify-content: space-between;
+
+					& .lang_selector {
+						margin-top: 3.5rem;
+
+						& a {
+							padding: 0.25rem 0.5rem;
+							text-decoration: none;
+
+							&:hover {
+								cursor: pointer;
+							}
+						}
+					}
+				}
 				
 				& > span,
 				.menu {
@@ -99,7 +117,6 @@ const posts = (await getCollection('note')).sort((a, b) => {
 			.category {
 				display: block;
 				font-size: var(--xs);
-				// text-transform: lowercase;
 				color: #aaa;
 				margin-left: 0.25rem;
 				transition: all 0.2s ease;
@@ -110,7 +127,14 @@ const posts = (await getCollection('note')).sort((a, b) => {
 		<main>
 			<section>
 				<div class="header">
-					<h1>{t('home.menu1')['title']}</h1>
+					<div class="title">
+						<h1>{t('home.menu1')['title']}</h1>
+						<div class="lang_selector">
+							<a href="/en/note">Aa</a>
+							<a href="/ja/note">あぁ</a>
+						</div>
+					</div>
+
 					<span>{t('home.menu1')['exp']}</span>
 					<div class="navi">
 						<div class="author">
