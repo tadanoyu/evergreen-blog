@@ -3,10 +3,33 @@ import type { CollectionEntry } from 'astro:content';
 import { BaseHead, Backlinks, Footer, Giscus, FormattedDate } from '@components/index';
 import { useTranslations } from '../i18n/utils';
 import '@fontsource-variable/noto-serif-kr';
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
 
-const { title, pubDate, updatedDate, lang } = Astro.props.frontmatter;
+const { title, pubDate, updatedDate, lang, uid } = Astro.props.frontmatter;
 const t = useTranslations(lang);
 type Props = CollectionEntry<'writing'>['data'];
+
+const post_exists = {
+	"ko": false,
+	"en": false,
+	"ja": false
+}
+function other_lang_exist() {
+	const __filename = fileURLToPath(import.meta.url);
+	const __dirname = path.dirname(__filename);
+	const basePath = path.join(__dirname, "../content/writing");
+	post_exists['ko'] = fs.existsSync(path.join(basePath, `${uid}.md`))
+	post_exists['ja'] = fs.existsSync(path.join(basePath, `${uid}-ja.md`))
+	post_exists['en'] = fs.existsSync(path.join(basePath, `${uid}-en.md`))
+	
+	post_exists[lang] = false
+
+	return post_exists
+}
+
+other_lang_exist()
 
 ---
 
@@ -14,8 +37,23 @@ type Props = CollectionEntry<'writing'>['data'];
 	<head>
 		<BaseHead title={title} />
 		<style lang="scss">
+			.lang_selector {
+				display: flex;
+				flex-direction: row-reverse;
+
+				& a {
+					padding: 0.25rem 0.5rem;
+					text-decoration: none;
+					color: var(--link);
+					box-shadow: 0 0 2px 0px #ccc;
+					margin: 0 0.25rem;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
 			.title {
-				margin-bottom: 2rem;
 				padding: 2rem 0;
 				line-height: 1;
 			}
@@ -114,6 +152,17 @@ type Props = CollectionEntry<'writing'>['data'];
 						</div>
 					</div>
 					<div class="contents">
+						<div class="lang_selector">
+							{post_exists['ko'] && ( 
+								<a href={"/writing/" + uid}>가</a>
+							)}
+							{post_exists['ja'] && ( 
+								<a href={"/ja/writing/" + uid+"-ja"}>あぁ</a>
+							)}
+							{post_exists['en'] && ( 
+								<a href={"/en/writing/" + uid+"-en"}>Aa</a>
+							)}
+						</div>
 						<slot />
 					</div>
 				</div>

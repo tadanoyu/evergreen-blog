@@ -10,6 +10,9 @@
         "lang": {
           "type": "string"
         },
+        "uid": {
+          "type": "string"
+        },
         "pubDate": {
           "type": "string"
         },
@@ -23,6 +26,7 @@
       "required": [
         "title",
         "lang",
+        "uid",
         "pubDate"
       ],
       "additionalProperties": false

@@ -1,5 +1,6 @@
 ---
 title: "Chat GPT ruined my confidence in English"
+uid: "2"
 lang: "en"
 pubDate: 'May 18 2024 06:30:00'
 ---

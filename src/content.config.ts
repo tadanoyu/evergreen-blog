@@ -19,6 +19,7 @@ const writing = defineCollection({
     schema: z.object({
       title: z.string(),
       lang: z.string(),
+      uid: z.string(),
       pubDate: z.string(),
       updatedDate: z.string().optional(),
     })

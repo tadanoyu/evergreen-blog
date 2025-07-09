@@ -1,5 +1,6 @@
 ---
 title: "I migrated from Bear app to Obsidian"
+uid: "7"
 lang: "en"
 pubDate: 'Nov 04 2024 12:48'
 ---
