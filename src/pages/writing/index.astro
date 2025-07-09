@@ -48,6 +48,11 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 			}
 			
 			.posts {
+				.empty {
+					color: #aaa;
+					display: flex;
+					justify-content: center;
+				}
 				a {
 					text-decoration: none;
 					display: block;
@@ -141,23 +146,25 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 				<div class="posts">
 					<ul>
 						{
-							posts.map((post) => (
-								(post.data.lang == "ko" && (
-									<li>
-										<a href={`/writing/${post.id}/`}>
-											<div class="head">
-												<div class="date">
-													{new Date(post.data.pubDate).toLocaleDateString('en-us', {
-													year: 'numeric',
-													month: 'short',
-													day: 'numeric',
-													})}
-												</div>
-												<span class="title">{post.data.title}</span>
+							posts.filter(post => post.data.lang == 'ko').length == 0 &&
+							<span class="empty">데이터가 없습니다</span>
+						}
+						{
+							posts.filter(post => post.data.lang == 'ko').map((post) => (
+								<li>
+									<a href={`/writing/${post.id}/`}>
+										<div class="head">
+											<div class="date">
+												{new Date(post.data.pubDate).toLocaleDateString('en-us', {
+												year: 'numeric',
+												month: 'short',
+												day: 'numeric',
+												})}
 											</div>
-										</a>
-									</li>
-								))
+											<span class="title">{post.data.title}</span>
+										</div>
+									</a>
+								</li>
 							))
 						}
 					</ul>

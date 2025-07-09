@@ -22,7 +22,7 @@ const posts = (await getCollection('note')).sort((a, b) => {
 	const folgeA = a.data.folge ?? "note"
 	const folgeB = b.data.folge ?? "note"
     return category_compare(folgeA , folgeB);
-});
+})
 
 ---
 
@@ -60,6 +60,11 @@ const posts = (await getCollection('note')).sort((a, b) => {
 			}
 			
 			.posts {
+				.empty {
+					color: #aaa;
+					display: flex;
+					justify-content: center;
+				}
 				a {
 					text-decoration: none;
 					display: block;
@@ -150,17 +155,19 @@ const posts = (await getCollection('note')).sort((a, b) => {
 				<div class="posts">
 					<ul>
 						{
-							posts.map((post) => (
-								(post.data.lang == "ko" && (
-									<li>
-										<a href={`/note/${post.id}/`}>
-											<div class="head">
-												<div class="category">{`{${post.data.folge}} ${post.data.uid}`}</div>
-												<span>{post.data.title}</span>
-											</div>
-										</a>
-									</li>
-								))
+							posts.filter(post => post.data.lang == 'ko').length == 0 &&
+							<span class="empty">데이터가 없습니다</span>
+						}
+						{
+							posts.filter(post => post.data.lang == 'ko').map((post) => (
+								<li>
+									<a href={`/note/${post.id}/`}>
+										<div class="head">
+											<div class="category">{`{${post.data.folge}} ${post.data.uid}`}</div>
+											<span>{post.data.title}</span>
+										</div>
+									</a>
+								</li>
 							))
 						}
 					</ul>
