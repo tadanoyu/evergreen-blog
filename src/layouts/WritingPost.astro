@@ -3,23 +3,10 @@ import type { CollectionEntry } from 'astro:content';
 import { BaseHead, Backlinks, Footer, Giscus, FormattedDate } from '@components/index';
 import { useTranslations } from '../i18n/utils';
 import '@fontsource-variable/noto-serif-kr';
-import path from 'path';
-import fs from 'fs';
-import { fileURLToPath } from 'url';
 
 const { title, pubDate, updatedDate, lang, uid } = Astro.props.frontmatter;
 const t = useTranslations(lang);
 type Props = CollectionEntry<'writing'>['data'];
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const basePath = path.join(__dirname, "../content/writing");
-
-const post_exists = {
-  ko: lang != "ko" && fs.existsSync(path.join(basePath, `${uid}.md`)),
-  ja: lang != "ja" && fs.existsSync(path.join(basePath, `${uid}-ja.md`)),
-  en: lang != "en" && fs.existsSync(path.join(basePath, `${uid}-en.md`)),
-};
 
 ---
 
@@ -143,15 +130,9 @@ const post_exists = {
 					</div>
 					<div class="contents">
 						<div class="lang_selector">
-							{post_exists['ko'] && ( 
-								<a href={"/writing/" + uid}>가</a>
-							)}
-							{post_exists['ja'] && ( 
-								<a href={"/ja/writing/" + uid+"-ja"}>あ</a>
-							)}
-							{post_exists['en'] && ( 
-								<a href={"/en/writing/" + uid+"-en"}>A</a>
-							)}
+							{ lang != 'ko' && <a href={"/writing/" + uid}>가</a> }
+							{ lang != 'ja' && <a href={"/ja/writing/" + uid+"-ja"}>あ</a> }
+							{ lang != 'en' && <a href={"/en/writing/" + uid+"-en"}>A</a> }
 						</div>
 						<slot />
 					</div>
