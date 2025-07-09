@@ -20,10 +20,10 @@ const post_exists = {
 function other_lang_exist() {
 	const __filename = fileURLToPath(import.meta.url);
 	const __dirname = path.dirname(__filename);
-	const basePath = path.join(__dirname, "../content/note");
-	post_exists['ko'] = fs.existsSync(path.join(basePath, `${uid}.md`))
-	post_exists['ja'] = fs.existsSync(path.join(basePath, `${uid}-ja.md`))
-	post_exists['en'] = fs.existsSync(path.join(basePath, `${uid}-en.md`))
+	const basePath = path.join(__dirname, "/");
+	post_exists['ko'] = fs.existsSync(path.join(basePath, `src/content/note/${uid}.md`))
+	post_exists['ja'] = fs.existsSync(path.join(basePath, `src/content/note/${uid}-ja.md`))
+	post_exists['en'] = fs.existsSync(path.join(basePath, `src/content/note/${uid}-en.md`))
 	
 	post_exists[lang] = false
 
