@@ -17,19 +17,5 @@
     "16": { "ko": false, "ja": false, "en": true},
     "17": { "ko": false, "ja": false, "en": true},
     "18": { "ko": true, "ja": false, "en": false},
-    "240610164501": { "ko": true, "ja": false, "en": false},
-    "250511090805": { "ko": true, "ja": false, "en": false},
-    "250512043750": { "ko": true, "ja": false, "en": false},
-    "250513050442": { "ko": true, "ja": false, "en": false},
-    "250513192645": { "ko": true, "ja": false, "en": false},
-    "250514212107": { "ko": true, "ja": false, "en": false},
-    "250515051958": { "ko": true, "ja": false, "en": false},
-    "250515204930": { "ko": true, "ja": false, "en": false},
-    "250516052830": { "ko": true, "ja": false, "en": false},
-    "250516124750": { "ko": true, "ja": false, "en": false},
-    "250517213935": { "ko": true, "ja": false, "en": false},
-    "250518152200": { "ko": true, "ja": false, "en": false},
-    "250518162405": { "ko": true, "ja": false, "en": false},
-    "250518202725": { "ko": true, "ja": false, "en": false},
-    "250707122604": { "ko": true, "ja": true, "en": false}
+    "250707122604": { "ko": true, "ja": true, "en": true}
 }

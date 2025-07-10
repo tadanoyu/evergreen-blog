@@ -5,20 +5,20 @@ import { useTranslations } from '../i18n/utils';
 import '@fontsource-variable/noto-serif-kr';
 import post_lang_mapping from "../components/posts.json"
 
-const t = useTranslations();
-type Props = CollectionEntry<'note'>['data'];
-
 const { title, pubDate, updatedDate, lang, uid } = Astro.props.frontmatter;
+const t = useTranslations(lang);
+type Props = CollectionEntry<'note'>['data'];
 
 ---
 
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<BaseHead title={title} />
 		<style lang="scss">
 			.lang_selector {
 				display: flex;
 				flex-direction: row-reverse;
+
 				& a {
 					padding: 0.25rem 0.5rem;
 					text-decoration: none;
@@ -113,15 +113,15 @@ const { title, pubDate, updatedDate, lang, uid } = Astro.props.frontmatter;
 						<div class="navi">
 							<div class="author">
 								<span class="by">by</span>
-								<a href="/">{t('home.name')}</a>
+								<a href={`/${lang && lang != "ko" ? lang : ''}`}>{t('home.name')}</a>
 							</div>
 							<span class="separator"> … </span>
 							<div class="navi_item">
-								<a href="/note">{t('home.menu1')['title']}</a>
+								<a href=`${lang && lang != "ko" ? '/' + lang : ''}/note`>{t('home.menu1')['title']}</a>
 							</div>
 							<span class="separator">　|　</span>
 							<div class="navi_item">
-								<a href="/writing">{t('home.menu2')['title']}</a>
+								<a href=`${lang && lang != "ko" ? '/' + lang : ''}/writing`>{t('home.menu2')['title']}</a>
 							</div>
 						</div>
 					</div>
