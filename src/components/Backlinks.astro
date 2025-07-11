@@ -3,7 +3,8 @@ import backlinks from "./backlinks.json"
 import categories from "./categories.json"
 import mappings from "./mappings.json"
 
-const currentPath = decodeURIComponent(Astro.url.pathname.split('/')[2]);
+const path = Astro.url.pathname.split('/')
+const currentPath = decodeURIComponent(path[path.length-2]);
 const refs = Object.keys(backlinks).filter(key => backlinks[key].includes(currentPath));
 ---
 
@@ -22,7 +23,7 @@ const refs = Object.keys(backlinks).filter(key => backlinks[key].includes(curren
         <ul>
             {refs.map(ref => (
                 <li>
-                    <a href={`/${categories[ref]}/${ref}`}>{`${ref} - ${mappings[ref] ?? 0}`}</a>
+                    <a href={`/${categories[ref]}/${ref}/`}>{`${ref.split('-')[0]} - ${mappings[ref] ?? 0}`}</a>
                 </li>
             ))}
         </ul>
