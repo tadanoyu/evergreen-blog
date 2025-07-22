@@ -131,9 +131,9 @@ type Props = CollectionEntry<'writing'>['data'];
 					</div>
 					<div class="contents">
 						<div class="lang_selector">
-							{ lang != 'ko' && post_lang_mapping[uid]['ko'] && <a href={"/writing/" + uid}>가</a> }
-							{ lang != 'ja' && post_lang_mapping[uid]['ja'] && <a href={"/ja/writing/" + uid+"-ja"}>あ</a> }
-							{ lang != 'en' && post_lang_mapping[uid]['en'] && <a href={"/en/writing/" + uid+"-en"}>A</a> }
+							{ lang != 'ko' && post_lang_mapping[uid]['ko'] && <a href={"/writing/" + uid + "/"}>가</a> }
+							{ lang != 'ja' && post_lang_mapping[uid]['ja'] && <a href={"/ja/writing/" + uid+"-ja/"}>あ</a> }
+							{ lang != 'en' && post_lang_mapping[uid]['en'] && <a href={"/en/writing/" + uid+"-en/"}>A</a> }
 						</div>
 						<slot />
 					</div>
