@@ -4,7 +4,9 @@ import { useTranslations } from '../../i18n/utils';
 import { BaseHead, Footer } from '@components/index';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-const t = useTranslations();
+const lang = "en"
+const t = useTranslations(lang);
+
 const posts = (await getCollection('writing')).sort((a, b) => {
 	let dateA = a.data.pubDate
 	let dateB = b.data.pubDate
@@ -26,19 +28,6 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 				& .title {
 					display: flex;
 					justify-content: space-between;
-
-					& .lang_selector {
-						margin-top: 3.5rem;
-
-						& a {
-							padding: 0.25rem 0.5rem;
-							text-decoration: none;
-
-							&:hover {
-								cursor: pointer;
-							}
-						}
-					}
 				}
 
 				& > span,
@@ -125,11 +114,7 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 			<section>
 				<div class="header">
 					<div class="title">
-						<h1>{t('home.menu1')['title']}</h1>
-						<div class="lang_selector">
-							<a href="/en/writing">A</a>
-							<a href="/ja/writing">あ</a>
-						</div>
+						<h1>{t('home.menu2')['title']}</h1>
 					</div>
 					<span>{t('home.menu2')['exp']}</span>
 					<div class="navi">
@@ -146,11 +131,7 @@ const posts = (await getCollection('writing')).sort((a, b) => {
 				<div class="posts">
 					<ul>
 						{
-							posts.filter(post => post.data.lang == 'ko').length == 0 &&
-							<span class="empty">데이터가 없습니다</span>
-						}
-						{
-							posts.filter(post => post.data.lang == 'ko').map((post) => (
+							posts.map((post) => (
 								<li>
 									<a href={`/writing/${post.id}/`}>
 										<div class="head">

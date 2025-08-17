@@ -11,7 +11,7 @@ type Props = CollectionEntry<'writing'>['data'];
 
 ---
 
-<html lang={lang ?? "ko"}>
+<html lang={lang ?? "en"}>
 	<head>
 		<BaseHead title={title} />
 		<style lang="scss">
@@ -117,23 +117,23 @@ type Props = CollectionEntry<'writing'>['data'];
 						<div class="navi">
 							<div class="author">
 								<span class="by">by</span>
-								<a href={`/${lang && lang != "ko" ? lang : ''}`}>{t('home.name')}</a>
+								<a href="/">{t('home.name')}</a>
 							</div>
 							<span class="separator"> … </span>
 							<div class="navi_item">
-								<a href=`${lang && lang != "ko" ? '/' + lang : ''}/note`>{t('home.menu1')['title']}</a>
+								<a href="/note">{t('home.menu1')['title']}</a>
 							</div>
 							<span class="separator">　|　</span>
 							<div class="navi_item">
-								<a href=`${lang && lang != "ko" ? '/' + lang : ''}/writing`>{t('home.menu2')['title']}</a>
+								<a href="/writing">{t('home.menu2')['title']}</a>
 							</div>
 						</div>
 					</div>
 					<div class="contents">
 						<div class="lang_selector">
-							{ lang != 'ko' && post_lang_mapping[uid]['ko'] && <a href={"/writing/" + uid + "/"}>가</a> }
-							{ lang != 'ja' && post_lang_mapping[uid]['ja'] && <a href={"/ja/writing/" + uid+"-ja/"}>あ</a> }
-							{ lang != 'en' && post_lang_mapping[uid]['en'] && <a href={"/en/writing/" + uid+"-en/"}>A</a> }
+							{ lang != 'ko' && post_lang_mapping[uid]['ko'] && <a href={"/writing/" + uid + "-ko/"}>가</a> }
+							{ lang != 'ja' && post_lang_mapping[uid]['ja'] && <a href={"/writing/" + uid+"-ja/"}>あ</a> }
+							{ lang != 'en' && post_lang_mapping[uid]['en'] && <a href={"/writing/" + uid+"/"}>A</a> }
 						</div>
 						<slot />
 					</div>
