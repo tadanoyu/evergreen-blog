@@ -10,7 +10,7 @@
     "9": { "ko": true, "ja": false, "en": false },
     "10": { "ko": true, "ja": false, "en": false },
     "11": { "ko": true, "ja": false, "en": false },
-    "12": { "ko": true, "ja": true, "en": true },
+    "12": { "ko": false, "ja": false, "en": true },
     "13": { "ko": true, "ja": false, "en": false },
     "14": { "ko": true, "ja": false, "en": false },
     "15": { "ko": true, "ja": false, "en": false },
