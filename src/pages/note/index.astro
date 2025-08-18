@@ -63,9 +63,14 @@ const posts = (await getCollection('note')).sort((a, b) => {
 						background-color: inherit;
 					}
 					
-					& span {
+					& span.head__title {
 						padding: 0.2rem;
 						transition: all 0.2s ease-in-out;
+
+						&:hover {
+							background-color: rgb(var(--gray-light));
+							border-radius: 3px;
+						}
 					}
 				}
 				
@@ -77,17 +82,11 @@ const posts = (await getCollection('note')).sort((a, b) => {
 					list-style: none;
 					transition: opacity 0.2s ease;
 					margin-bottom: 0.5rem;
-
-					&:hover{
-						a span {
-							background-color: rgb(var(--gray-light));
-							border-radius: 3px;
-						}
-					}
 				}
 
 				.head {
 					margin-bottom: 0.5rem;
+					margin-right: 0.5rem;
 				}
 			}
 
@@ -109,11 +108,12 @@ const posts = (await getCollection('note')).sort((a, b) => {
 				margin: 0 0.5rem;
 			}
 
-			.category {
+			.subtext {
 				display: block;
 				font-size: var(--xs);
 				color: #aaa;
 				margin-left: 0.25rem;
+				background-color: white !important;
 				transition: all 0.2s ease;
 			}
 		</style>
@@ -141,16 +141,26 @@ const posts = (await getCollection('note')).sort((a, b) => {
 				<div class="posts">
 					<ul>
 						{
-							posts.map((post) => (
-								<li>
-									<a href={`/note/${post.id}/`}>
-										<div class="head">
-											<div class="category">{`{${post.data.folge}} ${post.data.uid}`}</div>
-											<span>{post.data.title}</span>
-										</div>
-									</a>
-								</li>
-							))
+							posts
+							.filter((post) => post.data.lang === "en")
+							.map((post) => {
+								const langs = post_lang_mapping[post.data.uid] || {};
+								return (
+								<div class="post">
+									<li>
+										<a href={`/note/${post.id}/`}>
+											<div class="head">
+												{ langs.ko && langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid} - 🇰🇷 🇯🇵`}</span> }
+												{ langs.ko && !langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid} - 🇰🇷`}</span> }
+												{ !langs.ko && langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid} - 🇯🇵`}</span> }
+												{ !langs.ko && !langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid}`}</span> }
+												<span class="head__title">{`${post.data.title}`}</span>
+											</div>
+										</a>
+									</li>
+								</div>
+								);
+							})
 						}
 					</ul>
 				</div>

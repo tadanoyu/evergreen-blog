@@ -38,7 +38,7 @@ export const languages = {
         'exp': 'a space for little stories'
       },
       'home.menu3': {
-        'title':'present',
+        'title':'now',
         'exp': 'a space for my now'
       },
     },
