@@ -127,16 +127,12 @@ type Props = CollectionEntry<'note'>['data'];
 					</div>
 					<div class="contents">
 						<div class="lang_selector">
-							{ post_lang_mapping[uid]['sh'] && <a href={"/sh/" + uid + "/"}>📜</a> }
-							{ lang != 'ko' && post_lang_mapping[uid]['ko'] && <a href={"/note/" + uid + "-ko/"}>가</a> }
-							{ lang != 'ja' && post_lang_mapping[uid]['ja'] && <a href={"/note/" + uid + "-ja/"}>あ</a> }
-							{ lang != 'en' && post_lang_mapping[uid]['en'] && <a href={"/note/" + uid + "/"}>A</a> }
+							{ post_lang_mapping[uid]['sh'] && <a href={"/note/" + uid + "/"}>💬</a> }
 						</div>
 						<slot />
 					</div>
 				</div>
 			</article>
-			<Backlinks />
 		</main>
 		<Footer lang={lang} />
 		<Giscus />

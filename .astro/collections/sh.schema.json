@@ -1,0 +1,40 @@
+{
+  "$ref": "#/definitions/sh",
+  "definitions": {
+    "sh": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "folge": {
+          "type": "string"
+        },
+        "uid": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "pubDate": {
+          "type": "string"
+        },
+        "updatedDate": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "folge",
+        "uid",
+        "lang",
+        "pubDate"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,174 @@
+---
+import { getCollection } from 'astro:content';
+import { BaseHead, Footer } from '@components/index';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = "en"
+const t = useTranslations(lang);
+
+const posts = (await getCollection('sh')).sort((a, b) => {
+	const folge_sort = (id_1: string, id_2: string) => {
+        const len = Math.min(id_1.length, id_2.length);
+
+        // Compare each character's ASCII value
+        for (let i = 0; i < len; i++) {
+            const diff = id_1.charCodeAt(i) - id_2.charCodeAt(i);
+            if (diff !== 0) return diff; // Return the first difference
+        }
+
+        // If one is a prefix of the other, shorter one should come first
+        return id_1.length - id_2.length;
+    };
+
+	const folgeA = a.data.folge ?? "sh"
+	const folgeB = b.data.folge ?? "sh"
+    return folge_sort(folgeA , folgeB);
+})
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>shorthand | jiiyoo.me</title>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style lang="scss">
+			.header {
+				margin-bottom: 3rem;
+
+				& .title {
+					display: flex;
+					justify-content: space-between;
+				}
+				
+				& > span,
+				.menu {
+					font-size: var(--sm);
+				}
+			}
+			
+			.posts {
+				.empty {
+					color: #aaa;
+					display: flex;
+					justify-content: center;
+				}
+				a {
+					text-decoration: none;
+					display: block;
+					
+					&:hover {
+						background-color: inherit;
+					}
+					
+					& span.head__title {
+						padding: 0.2rem;
+						transition: all 0.2s ease-in-out;
+
+						&:hover {
+							background-color: rgb(var(--gray-light));
+							border-radius: 3px;
+						}
+					}
+				}
+				
+				& > ul {
+					padding: 0;
+				}
+				
+				li {
+					list-style: none;
+					transition: opacity 0.2s ease;
+					margin-bottom: 0.5rem;
+				}
+
+				.head {
+					margin-bottom: 0.5rem;
+					margin-right: 0.5rem;
+				}
+			}
+
+			.navi {
+				display: flex;
+				align-items: center;
+				
+				a {
+					color: inherit;
+					font-size: var(--sm);
+				}
+
+				.by {
+					font-size: var(--xs);
+				}
+			}
+
+			.separator {
+				margin: 0 0.5rem;
+			}
+
+			.separator:nth-last-child(2) {
+				color: #ccc;
+			}
+
+			.subtext {
+				display: block;
+				font-size: var(--xs);
+				color: #aaa;
+				margin-left: 0.25rem;
+				background-color: white !important;
+				transition: all 0.2s ease;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="header">
+					<div class="title">
+						<h1>{t('home.menu1')['title']}</h1>
+					</div>
+
+					<span>{t('home.menu1')['exp']}</span>
+					<div class="navi">
+						<div class="author">
+							<span class="by">by</span>
+							<a href="/">{t('home.name')}</a>
+						</div>
+						<span class="separator"> … </span>
+						<div class="navi_item">
+							<a href="/writing">{t('home.menu1')['title']}</a>
+						</div>
+						<span class="separator"> | </span>
+						<div class="navi_item">
+							<a href="/writing">{t('home.menu2')['title']}</a>
+						</div>
+					</div>
+				</div>
+				<div class="posts">
+					<ul>
+						{
+							posts
+							.filter((post) => post.data.lang === "en")
+							.map((post) => {
+								return (
+								<div class="post">
+									<li>
+										<a href={`/sh/${post.id}/`}>
+											<div class="head">
+												<span class="subtext">{`{${post.data.folge}} ${post.data.uid}`}</span>
+												<span class="head__title">{`${post.data.title}`}</span>
+											</div>
+										</a>
+									</li>
+								</div>
+								);
+							})
+						}
+					</ul>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
