@@ -142,7 +142,6 @@ const posts = (await getCollection('note')).sort((a, b) => {
 					<ul>
 						{
 							posts
-							.filter((post) => post.data.lang === "en")
 							.map((post) => {
 								const langs = post_lang_mapping[post.data.uid] || {};
 								return (
@@ -150,10 +149,7 @@ const posts = (await getCollection('note')).sort((a, b) => {
 									<li>
 										<a href={`/note/${post.id}/`}>
 											<div class="head">
-												{ langs.ko && langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid} - 🇰🇷 🇯🇵`}</span> }
-												{ langs.ko && !langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid} - 🇰🇷`}</span> }
-												{ !langs.ko && langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid} - 🇯🇵`}</span> }
-												{ !langs.ko && !langs.ja && <span class="subtext">{`{${post.data.folge}} ${post.data.uid}`}</span> }
+												<span class="subtext">{`{${post.data.folge}} ${post.data.uid}`}</span>
 												<span class="head__title">{`${post.data.title}`}</span>
 											</div>
 										</a>
