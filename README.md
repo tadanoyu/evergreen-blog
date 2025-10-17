@@ -4,10 +4,10 @@
 
 ## Blog History:
 
-- Vue blog → https://github.com/rolemadelen/vue-blog
-- Multilingual Blog v1 → https://github.com/rolemadelen/euisblue.github.io
-- Multilingual Blog v2 → https://github.com/rolemadelen/bluelog
-- Blog v1 → https://github.com/rolemadelen/blog-v1
-- Blog v2 → https://github.com/rolemadelen/blog-v2
-- Minimalist blog → https://github.com/rolemadelen/minimalist-blog
+- Vue blog → https://github.com/tadanoyu/vue-blog
+- Multilingual Blog v1 → https://github.com/tadanoyu/euisblue.github.io
+- Multilingual Blog v2 → https://github.com/tadanoyu/bluelog
+- Blog v1 → https://github.com/tadanoyu/blog-v1
+- Blog v2 → https://github.com/tadanoyu/blog-v2
+- Minimalist blog → https://github.com/tadanoyu/minimalist-blog
 - evergreen → Current blog
