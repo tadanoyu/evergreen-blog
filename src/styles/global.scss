@@ -10,6 +10,7 @@
 	--accent-dark: #000d8a;
 	--link: #000;
 	--link-contents: #235bbd;
+	--xxs: 0.7rem;
 	--xs: 0.8rem;
 	--sm: 0.875rem;
 	--max-width: 600px;
@@ -113,9 +114,9 @@ a:hover {
 	text-decoration-color: rgb(var(--gray-light));
 }
 
-p {
-	margin: 2rem 0;
-}
+// p {
+// 	margin: 2rem 0;
+// }
 textarea {
 	width: 100%;
 	font-size: 16px;
@@ -231,4 +232,8 @@ hr {
 	& > a {
 		color: #ccc !important;
 	}
+}
+.del {
+	font-size: var(--xxs);
+	margin-bottom: 0.3rem;
 }
