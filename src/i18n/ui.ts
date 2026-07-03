@@ -29,15 +29,15 @@ export const languages = {
       'home.back': '← back',
       'home.menu1': {
         'title':'dev',
-        'exp': '...space for tech'
+        'exp': '︲ space for tech'
       },
       'home.menu2': {
         'title':'log',
-        'exp': '...space for my daily'
+        'exp': '︲ space for my daily'
       },
       'home.menu3': {
         'title':'now',
-        'exp': '...space for my now'
+        'exp': '︲ space for my now'
       },
     },
     ja: {
