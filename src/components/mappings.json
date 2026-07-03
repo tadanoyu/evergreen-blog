@@ -28,5 +28,9 @@
   "27": "Generate GPG key",
   "28": "Check for existing GPG keys",
   "29": "Batch clone git repositories",
-  "30": "Batch sign previous commit messages"
+  "30": "Batch sign previous commit messages",
+  "31": "Bypass passphrase when cloning git repositories",
+  "32": "Rewrite author info in commit messages with git-filter-repo",
+  "33": "rewrite commit authors using git-filter-repo",
+  "34": "Creating a shell command alias for git"
 }
