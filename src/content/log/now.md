@@ -26,3 +26,4 @@ This is a [now page](https://nownownow.com/about), inspired from [Derek Sivers](
 - App: [Loran](/log/9/)
 - Area of study: Cybersecurity
 - Music: [Balming Tiger](https://open.spotify.com/artist/6vbKIm1WsvhMMDpthYONc1?si=FgFw4SBISBGU8260yq-ETg), [안서진](https://open.spotify.com/track/6YPVRhXctsi0ZYp9e8ftoI?si=1b85753410764e32)
+- Instrument: Taiko <br />![taiko](/images/now_taiko.gif)
