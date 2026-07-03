@@ -26,5 +26,7 @@
   "25": "Remove the lock file to resolve GPG lock issue",
   "26": "Update existing GPG key's name and email",
   "27": "Generate GPG key",
-  "28": "Check for existing GPG keys"
+  "28": "Check for existing GPG keys",
+  "29": "Batch clone git repositories",
+  "30": "Batch sign previous commit messages"
 }
