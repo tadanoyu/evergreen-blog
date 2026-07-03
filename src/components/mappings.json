@@ -10,7 +10,6 @@
   "8": "개발자를 그만 꿈꾸기로 했다",
   "9": "나 혼자 쓰려고 만든 노트 어플 - 로랑(Loran)",
   "10": "Bandit Lv 0~20",
-  "11": "How I Learned to Speak Japanese",
   "12": "우연히 일본어를 할 줄 알게 되었다",
   "13": "[Side Project] Pomosh written in Rust",
   "14": "[Side Project] Things I Want",
@@ -20,5 +19,12 @@
   "18": "How to redirect URL in Astro",
   "19": "Dvorak 자판이 만들어진 이유",
   "20": "집중력 도둑이 내 손목에 있었구나",
-  "21": "11시간 걸려가는 단골 미용실"
+  "21": "11시간 걸려가는 단골 미용실",
+  "22": "내 일에 대한 원동력 찾기",
+  "23": "라식",
+  "24": "Troubleshooting GPG sign failure",
+  "25": "Remove the lock file to resolve GPG lock issue",
+  "26": "Update existing GPG key's name and email",
+  "27": "Generate GPG key",
+  "28": "Check for existing GPG keys"
 }
