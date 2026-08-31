@@ -1,5 +1,4 @@
 {
-  "now": "Now page",
   "1": "모니터에서 가상현실로",
   "2": "2개월 차 신입은 할 줄 아는 게 없는 게 당연한 걸까",
   "3": "나는 왜 한 시간 빨리 출근을 하는걸까",
@@ -19,7 +18,7 @@
   "18": "How to redirect URL in Astro",
   "19": "Dvorak 자판이 만들어진 이유",
   "20": "집중력 도둑이 내 손목에 있었구나",
-  "21": "11시간 걸려가는 단골 미용실",
+  "21": "11시간 걸리는 단골 미용실",
   "22": "내 일에 대한 원동력 찾기",
   "23": "라식",
   "24": "Troubleshooting GPG sign failure",
@@ -31,6 +30,7 @@
   "30": "Batch sign previous commit messages",
   "31": "Bypass passphrase when cloning git repositories",
   "32": "Rewrite author info in commit messages with git-filter-repo",
-  "33": "rewrite commit authors using git-filter-repo",
-  "34": "Creating a shell command alias for git"
+  "33": "Rewrite commit authors using git-filter-repo",
+  "34": "Creating a shell command alias for git",
+  "now": "now now now"
 }

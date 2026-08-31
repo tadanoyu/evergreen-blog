@@ -4,11 +4,12 @@ import rehypeExternalLinks from 'rehype-external-links';
 
 
 import sitemap from '@astrojs/sitemap';
+import contentMetadata from './scripts/metadata-integration.mjs';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://example.com',
-	integrations: [mdx(), sitemap()],
+	integrations: [contentMetadata(), mdx(), sitemap()],
 	markdown: {
 		rehypePlugins: [
 			[
